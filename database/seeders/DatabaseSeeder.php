@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,12 +14,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('roles')->insert(['id' => 1,'role' => 'Patient']);
-        \DB::table('roles')->insert(['id' => 2,'role' => 'Doctor']);
-
-
-        $visit_types = [
-            [
+       
+        $visit_types = [[
                 'type' => 'Konsultacja',
                 'standard_duration' => 1
             ],[
@@ -35,15 +32,25 @@ class DatabaseSeeder extends Seeder
                 'standard_duration' => 1
             ],[
                 'type' => 'Lakowanie',
-                'standard_duration' => 1
-            ]
-        ];
+                'standard_duration' => 1]];
 
-
+        \DB::table('roles')->insert(['role' => 'Patient']);
+        \DB::table('roles')->insert(['role' => 'Doctor']);
+        \DB::table('roles')->insert(['role' => 'Reception']);
         \DB::table('visit_types')->insert($visit_types);
 
-        
 
-        // \App\Models\User::factory(10)->create();
+        $user_number = 50;
+
+        \App\Models\User::factory($user_number)->create();
+        \App\Models\User_data::factory($user_number)->create();
+        \App\Models\Visit::factory(rand($user_number+10,$user_number*2))->create();
+
+        $doctors = DB::table('user_datas')->where('role_id', '=', '2')->get();
+        foreach($doctors as $doctor)
+            \App\Models\WorkHours::factory()->bindDoctor($doctor->id)->create();
+        
+            
+
     }
 }

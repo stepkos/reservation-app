@@ -26,6 +26,7 @@ class CreateWorkHoursTable extends Migration
             $table->time('endThursday');
             $table->time('beginFriday');
             $table->time('endFriday');
+            $table->timestamps();
         });
 
         Schema::table('work_hours', function(Blueprint $table){
