@@ -15,7 +15,7 @@ class User_dataFactory extends Factory
     {
         return [
             'phone' => $this->faker->numerify('###-###-###'),
-            'role_id' => rand(1,2)
+            'role_id' => rand(1,3)
         ];
     }
 }
