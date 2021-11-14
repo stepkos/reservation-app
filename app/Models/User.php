@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\User_data;
 use App\Models\WorkHours;
+use App\Models\Visit;
 
 class User extends Authenticatable
 {
@@ -55,6 +56,14 @@ class User extends Authenticatable
         return $this->hasOne(WorkHours::class, 'id_doctor');
     }
 
+    public function visit_patient(){
+        return $this->hasMany(Visit::class, 'id_patient');
+    }
+
+    
+    public function visit_doctor(){
+        return $this->hasMany(Visit::class, 'id_doctor');
+    }
 
 
 
@@ -94,6 +103,10 @@ class User extends Authenticatable
                 ->where('users.id',$user_id)
                 ->get(['roles.role'])
                 ->toArray()[0]['role'];
+    }
+
+    public static function allVisits(){ 
+
     }
 
 
