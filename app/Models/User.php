@@ -11,6 +11,8 @@ use App\Models\User_data;
 use App\Models\WorkHours;
 use App\Models\Visit;
 
+use DB;
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -87,7 +89,7 @@ class User extends Authenticatable
                 ->get();
     }
 
-    public static function doctorWorkHours($doctor_id){ //jeżeli podano zły doctor_id zwraca null
+    public static function doctorWorkHours($doctor_id){ //jeżeli podano użytkownika, która nie jest doktorem zwraca null
         $workHours = DB::table('users')
                     ->join('work_hours', 'users.id','=','work_hours.doctor_id')
                     ->where('users.id',$doctor_id)
@@ -96,7 +98,7 @@ class User extends Authenticatable
         return ($workHours != []) ? $workHours : null;
     }
 
-    public static function role($user_id){  // zwraca stringa reprezentującego role
+    public static function role($user_id){  // zwraca stringa reprezentującego role ['Patient', 'Doctor', 'Reception']
         return DB::table('users')
                 ->join('user_datas', 'users.id','=','user_datas.id')
                 ->join('roles', 'user_datas.role_id','=','roles.id')
@@ -105,8 +107,11 @@ class User extends Authenticatable
                 ->toArray()[0]['role'];
     }
 
-    public static function allVisits(){ 
-
+    public static function allVisits($user_id){ // nie identyfikuje roli użytkownika
+            return DB::table('full_visit_view')
+                        ->where('patient_id','=',$user_id)
+                        ->orWhere('doctor_id','=',$user_id)
+                        ->get();
     }
 
 
