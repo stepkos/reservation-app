@@ -39,6 +39,7 @@ class DatabaseSeeder extends Seeder
         \DB::table('roles')->insert(['role' => 'Reception']);
         \DB::table('visit_types')->insert($visit_types);
 
+        
 
         $user_number = 50;
 
