@@ -1,0 +1,75 @@
+#visits_holder{
+    width:65%;
+    margin-left: 5%;
+    height:90%;
+    margin-top: 3%;
+
+    float:left;
+    overflow-y: scroll;
+    background-color: white;
+
+    border-radius: 5%;
+}
+.visit_card{
+    width:70%;
+    margin-left: 15%;
+    height:300px;
+    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+/* width */
+#visits_holder::-webkit-scrollbar {
+    width: 10px;
+  
+  }
+  
+  /* Track */
+  #visits_holder::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right:50px;
+  }
+  
+  /* Handle */
+  #visits_holder::-webkit-scrollbar-thumb {
+    background: rgb(144, 144, 144);
+    border-right: 4px white solid;
+  background-clip: padding-box;
+  }
+  
+  /* Handle on hover */
+  #visits_holder::-webkit-scrollbar-thumb:hover {
+    background: rgb(93, 93, 93);
+  }
+
+
+
+#calendar_holder{
+    float: left;
+    width: 30%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+#color-calendar{
+    margin-top:10%;
+    width:85%;
+}
+.calendar_event{
+    width:84%;
+    height:70px;
+    background-color: white;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
+    box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
+    
+    margin-top:5%;
+}
