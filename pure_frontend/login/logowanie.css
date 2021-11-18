@@ -1,0 +1,109 @@
+
+#container{
+    background: linear-gradient(180deg, #1ECFE1,#008DFF);
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+    font-family: 'Roboto', sans-serif;
+    min-width: 500px;
+    min-height: 500px; 
+}
+#lewa{
+    display: flex;
+    margin-top: 69px;
+    flex-direction: column;
+    min-height: 5em;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    justify-content: space-evenly;
+    
+
+}
+#formularz{
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 60px;
+    height: 87%;
+    width: 75%;
+    margin-top: 4.5em;
+    margin-left: 10em;
+    margin-right: 3em;
+    min-height: 510px;
+    min-width:350px;
+}
+#logowanie{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.login{
+    background-color:#DDDDDD ;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size:15px;
+    line-height: 3;
+    width: 20em;
+    margin-bottom: 5em;
+}
+#zaloguj{
+    background-color:#008DFF;
+    font-weight: 300;
+    color: white;
+    border-radius: 9px;
+    height: 4em;
+    width: 20em;
+    font-size:0.95em;
+
+}
+.login::-webkit-input-placeholder{
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+#pacjent{
+    text-align: center;
+    font-size: 2em;
+    color: #008DFF;
+    
+}
+#lorem{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+#rejestracja{
+    background-color:white;
+    font-weight: 300;
+    color: #008DFF;
+    border-radius: 9px;
+    height: 4em;
+    width: 20em;
+    font-size:0.95em;
+}
+#log{
+    font-size: 0.5;
+    color: white;
+    text-align: center;
+}
+img{
+    max-width: 450px;
+    max-height: 450px;
+}
+@media screen {
+        
+}
