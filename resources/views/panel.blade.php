@@ -7,7 +7,9 @@
 
 @section('content')
     <section id="visits_holder">
-        <article class="visit_card"></article>
+        <article class="visit_card">
+            test
+        </article>
         <article class="visit_card"></article>
         <article class="visit_card"></article>
         <article class="visit_card"></article>
