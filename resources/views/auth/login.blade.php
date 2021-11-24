@@ -47,7 +47,6 @@
         </div>
 
         <div id="lewa-dol" class="lewa">
-            @csrf
             <a href="{{ route('register') }}">
                 <input type="button" id="rejestracja" value="Rejestracja">
             </a>

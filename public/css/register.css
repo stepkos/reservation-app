@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: flex-start;
+    align-items: stretch;
     font-family: 'Roboto', sans-serif;
     min-width: 500px;
     min-height: 500px;
@@ -20,7 +20,7 @@
     display: flex;
     margin-top: 40px;
     flex-direction: row;
-    min-height: 510px;
+    min-height: 2.5em;
     width: 100%;
     height: 80%;
 }
@@ -36,15 +36,16 @@
 }
 
 #lewa-dol {
+    margin-top: 2em;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
     min-height: 2.5em;
     align-content: center;
     align-items: center;
     margin-bottom: 3em;
     justify-content: space-evenly;
-    margin-left: 7.5%;
+    margin-left: 8%;
 }
 
 #formularz {
@@ -60,49 +61,8 @@
     margin-top: 4.5em;
     margin-left: 5%;
     margin-right: 2%;
-    min-height: 510px;
-    min-width: 350px;
-}
-
-#logowanie {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.login {
-    background-color: #DDDDDD;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    font-size: 15px;
-    line-height: 3;
-    width: 20em;
-    margin-bottom: 5em;
-}
-
-#zaloguj {
-    background-color: #008DFF;
-    font-weight: 300;
-    color: white;
-    border-radius: 9px;
-    height: 4em;
-    width: 20em;
-    font-size: 0.95em;
-    cursor: pointer;
-}
-
-.login::-webkit-input-placeholder {
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-#pacjent {
-    text-align: center;
-    font-size: 2em;
-    color: #008DFF;
+    min-height: 725px;
+    min-width: 694px;
 }
 
 #lorem {
@@ -133,13 +93,78 @@ img {
     max-height: 450px;
 }
 
+#rejestracja_formularz {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.divy_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.register {
+    background-color: #DDDDDD;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 3;
+    width: 20em;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.register::-webkit-input-placeholder {
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#zarejestruj {
+    background-color: #008DFF;
+    font-weight: 300;
+    color: white;
+    border-radius: 9px;
+    height: 4em;
+    width: 20em;
+    font-size: 0.95em;
+    min-height: 0.5em;
+    min-width: 0.5em;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+#pacjent {
+    text-align: center;
+    font-size: 2em;
+    color: #008DFF;
+}
+
 @media screen and (max-width: 450px) {
+    #zarejestruj {
+        background-color: #008DFF;
+        font-weight: 300;
+        color: white;
+        border-radius: 9px;
+        height: 4em;
+        width: 20em;
+        font-size: 0.95em;
+        min-height: 0.5em;
+        min-width: 0.5em;
+        margin-left: 0%;
+    }
     #container2 {
         flex-direction: column;
         align-items: flex-start;
         max-width: 70%;
         align-items: center;
-        margin-bottom: 15em;
+        margin-bottom: 60em;
+        margin-top: 5em;
     }
     #container {
         background: linear-gradient(180deg, #1ECFE1, #008DFF);
@@ -150,32 +175,37 @@ img {
     }
     #formularz {
         background-color: white;
-        align-self: center;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-left: 25%;
         border-radius: 60px;
+        min-height: 800px;
+        min-width: 400px;
+        margin-left: 30%;
+    }
+    .divy_form {
+        flex-direction: column;
+        margin-left: -2em;
     }
     #lewa-gora {
-        margin-top: 5em;
-        margin-left: 17%;
         display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
         justify-content: space-evenly;
+        margin-left: 10%;
     }
     #lewa-dol {
         align-self: flex-start;
         display: flex;
         flex-direction: column;
-        margin-left: 12%;
+        margin-left: 5%;
         margin-top: 10px;
         align-content: center;
         align-items: center;
         justify-content: space-evenly;
+        margin-left: 10%;
     }
     img {
         max-width: 50px;
@@ -184,13 +214,29 @@ img {
 }
 
 @media screen and (min-width: 451px) and (max-width: 799px) {
-    #container2 {
+    #zarejestruj {
+        background-color: #008DFF;
+        font-weight: 300;
+        color: white;
+        border-radius: 9px;
+        height: 4em;
+        width: 20em;
+        font-size: 0.95em;
+        min-height: 0.5em;
+        min-width: 0.5em;
+        margin-left: 0%;
+    }
+    .divy_form {
         flex-direction: column;
+        margin-left: -10%;
+    }
+    #container2 {
+        margin-top: 7em;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 70%;
         align-items: center;
-        justify-content: center;
-        width: 70vw;
-        align-items: center;
-        margin-bottom: 15em;
+        margin-bottom: 60em;
     }
     #container {
         background: linear-gradient(180deg, #1ECFE1, #008DFF);
@@ -207,11 +253,12 @@ img {
         flex-direction: column;
         justify-content: space-evenly;
         border-radius: 60px;
-        margin-left: 25%;
         height: 200%;
+        min-width: 500px;
+        min-height: 800px;
+        margin-left: 10%;
     }
     #lewa-gora {
-        margin-top: 5em;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -222,7 +269,7 @@ img {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-        margin-left: 1%;
+        margin-left: 20%;
         align-content: center;
         align-items: center;
         justify-content: space-evenly;
@@ -234,6 +281,24 @@ img {
 }
 
 @media screen and (min-width: 800px) and (max-width: 801px) {
+    #rejestracja_formularz {
+        margin-left: -4em;
+    }
+    .divy_form {
+        flex-direction: column;
+    }
+    #zarejestruj {
+        background-color: #008DFF;
+        font-weight: 300;
+        color: white;
+        border-radius: 9px;
+        height: 4em;
+        width: 20em;
+        font-size: 0.95em;
+        min-height: 0.5em;
+        min-width: 0.5em;
+        margin-left: 10%;
+    }
     #container2 {
         flex-direction: column;
         align-items: flex-start;
@@ -257,11 +322,9 @@ img {
         justify-content: space-evenly;
         border-radius: 60px;
         height: 200%;
-        margin-left: 13%;
-        align-self: flex-start;
+        margin-left: 10%;
     }
     #lewa-gora {
-        margin-top: 5em;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -288,12 +351,15 @@ img {
 /*Jebać Apple zróbcie kurwa urządzenia w normalnych rozmiarach*/
 
 @media screen and (max-width: 385px) {
+    .divy_form {
+        flex-direction: column;
+    }
     #container2 {
         flex-direction: column;
         align-items: flex-start;
         max-width: 70%;
         align-items: center;
-        margin-bottom: 15em;
+        margin-bottom: 65em;
     }
     #container {
         background: linear-gradient(180deg, #1ECFE1, #008DFF);
@@ -309,8 +375,9 @@ img {
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-left: 7%;
+        margin-left: 17%;
         border-radius: 60px;
+        min-width: 350px;
     }
     #lewa-gora {
         margin-top: 5em;
@@ -338,12 +405,15 @@ img {
 }
 
 @media screen and (max-width: 281px) {
+    .divy_form {
+        flex-direction: column;
+    }
     #container2 {
         flex-direction: column;
         align-items: flex-start;
         max-width: 70%;
         align-items: center;
-        margin-bottom: 15em;
+        margin-bottom: 65em;
     }
     #container {
         background: linear-gradient(180deg, #1ECFE1, #008DFF);
@@ -355,11 +425,9 @@ img {
     #formularz {
         background-color: white;
         display: flex;
-        width: 1em;
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-left: 25%;
         border-radius: 60px;
     }
     #lewa-gora {
