@@ -109,6 +109,25 @@
     -webkit-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
     -moz-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
     box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
-    
     margin-top:5%;
+    display: flex;
+}
+
+.calendar_event_name{
+  width: 50%;
+  height: 70px;
+  font-size: 2vh;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar_event_date{
+  width: 50%;
+  height: 70px;
+  font-size: 2.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
