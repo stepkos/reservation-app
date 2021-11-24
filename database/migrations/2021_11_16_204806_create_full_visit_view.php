@@ -13,6 +13,8 @@ class CreateFullVisitView extends Migration
      */
     public function up()
     {
+        
+        DB::statement("DROP VIEW IF EXISTS full_visit_view;"); 
 
         // tak wiem że to skomplikowane zapytania, ale prościej się nie dało przy takich relacjach :)
         DB::statement("create view full_visit_view as 
@@ -44,6 +46,6 @@ class CreateFullVisitView extends Migration
      */
     public function down()
     {
-         DB::statement("DROP IF EXISTS VIEW full_visit_view");
+        //  DB::statement("DROP IF EXISTS VIEW full_visit_view");
     }
 }
