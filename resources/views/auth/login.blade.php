@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logowanie</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-    </style>
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
@@ -15,10 +20,12 @@
 <body>
     <div id="container">
         <div id="container2">
+
             <div id="lewa-gora" class="lewa">
-                <img src="dentist-3249382_960_720.png" id="logo">
+                <img src="{{ asset('images/dentist-logo.png') }}" id="logo">
                 <p id="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
+
             <div id="formularz">
                 <p id="pacjent">Zaloguj się jako pacjent</p>
                 <form id="logowanie" method="POST">
@@ -34,18 +41,17 @@
                     @enderror
                     <input type="password" placeholder="Hasło" class="login" name="password" required autocomplete="current-password"></br>
 
-                    <input type="submit" name="submit_login" id="zaloguj" value="Zaloguj">
+                    <input type="submit" id="zaloguj" value="Zaloguj">
                 </form>
             </div>
         </div>
+
         <div id="lewa-dol" class="lewa">
-            <form>
-                @csrf
-                <a href="{{ route('register') }}">
-                    <input type="button" name="registration" id="rejestracja" value="Rejestracja">
-                </a>
-                <p id="log">Jeśli nie posiadasz jeszcze konta</p>
-            </form>
+            @csrf
+            <a href="{{ route('register') }}">
+                <input type="button" id="rejestracja" value="Rejestracja">
+            </a>
+            <p id="log">Jeśli nie posiadasz jeszcze konta</p>
         </div>
     </div>
     </div>
