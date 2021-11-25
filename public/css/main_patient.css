@@ -18,7 +18,46 @@
     -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
     box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
     margin-top:50px;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 50px;
+}
+
+.visit_doctor_name {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.visit_date {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+}
+
+.visit_recommendations {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.visit_recommendations a{
+  text-decoration: none;
+  background-color: #37aee6;
+  color: white;
+  border-radius: 10px;
+  padding: 1%;
 }
 
 /* width */
@@ -70,6 +109,25 @@
     -webkit-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
     -moz-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
     box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
-    
     margin-top:5%;
+    display: flex;
+}
+
+.calendar_event_name{
+  width: 50%;
+  height: 70px;
+  font-size: 2vh;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar_event_date{
+  width: 50%;
+  height: 70px;
+  font-size: 2.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

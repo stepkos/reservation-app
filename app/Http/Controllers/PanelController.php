@@ -13,4 +13,9 @@ class PanelController extends Controller
         return view("panel");
 
     }
+    public function index_recepcja(){
+
+        return view("recepcja_panel");
+
+    }
 }

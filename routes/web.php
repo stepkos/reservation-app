@@ -23,3 +23,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/panel', [App\Http\Controllers\PanelController::class, 'index']);
+Route::get('/panel_recepcja', [App\Http\Controllers\PanelController::class, 'index_recepcja']);
