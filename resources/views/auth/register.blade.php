@@ -26,26 +26,46 @@
             </div>
             <div id="formularz">
                 <p id="pacjent">Zarejestruj się</p>
-                <form id="rejestracja_formularz">
+                <form id="rejestracja_formularz" method="POST">
+                    @csrf
+
                     <div class="divy_form">
-                        <input type="text" placeholder="Login" id="login" name="login" class="register">
-                        <input type="text" placeholder="Imię i Nazwisko" id=imie name="name" class="register">
+
+                        @error('name')
+                            <strong>{{ $message }}</strong>
+                        @enderror
+                        <input type="text" placeholder="Imię i Nazwisko" id=imie name="name" class="register" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
                     </div>
                     <div class="divy_form">
-                        <input type="password" placeholder="Hasło" id="haslo" name="password" class="register">
-                        <input type="email" placeholder="mail" id=imie name="email" class="register">
-                    </div>
-                    <div class="divy_form">
-                        <input type="password" placeholder="Powtórz hasło" id="haslo" name="password_repeat" class="register">
+
+                        @error('email')
+                            <strong>{{ $message }}</strong>
+                        @enderror
+                        <input type="email" placeholder="Email" id="login" name="email" class="register" value="{{ old('email') }}" autocomplete="email" required>
+
                         <input type="tel" placeholder="Numer telefonu" id=imie name="phone_number" class="register">
+
                     </div>
-                    <input type="submit" name="submit_register" id="zarejestruj" value="Zarejestruj się">
+                    <div class="divy_form">
+
+                        @error('password')
+                            <strong>{{ $message }}</strong>
+                        @enderror
+                        <input type="password" placeholder="Hasło" id="haslo" name="password" class="register" required autocomplete="new-password">
+
+                        <input type="password" placeholder="Powtórz hasło" id="haslo" name="password_confirmation" class="register" required autocomplete="new-password">
+
+                    </div>
+
+                    <input type="submit" id="zarejestruj" value="Zarejestruj się">
+
                 </form>
             </div>
         </div>
         <div id="lewa-dol">
             <a href="{{ route('login') }}">
-                <input type="button" name="login_przejscie" id="rejestracja" value="Login">
+                <input type="button" id="rejestracja" value="Login">
             </a>
             <p id="log">Jeśli posiadasz już konto</p>
         </div>
