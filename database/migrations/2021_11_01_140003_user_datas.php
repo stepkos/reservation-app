@@ -16,7 +16,7 @@ class UserDatas extends Migration
         Schema::create('user_datas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('phone')->nullable();
-            $table->unsignedBigInteger('role_id');
+            $table->unsignedBigInteger('role_id')->default(1);
             $table->timestamps();
         });
 

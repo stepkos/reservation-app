@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use App\Models\User_data;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -64,10 +65,23 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $user_data = User_data::create([
+            'phone' => $data['phone_number']
+        ]);
+
+        if ($user->id != $user_data->id) {
+            error_log("Brak integralnosci danych miedzy tabelą user i user data");
+            report("Brak integralnosci danych miedzy tabelą user i user data");
+        }
+        else {
+            return $user;
+        }
+        
     }
 }
