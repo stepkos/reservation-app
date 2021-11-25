@@ -44,10 +44,10 @@ class DatabaseSeeder extends Seeder
         $user_number = 50;
 
         \App\Models\User::factory($user_number)->create();
-        \App\Models\User_data::factory($user_number)->create();
+        // \App\Models\User_data::factory($user_number)->create();
         \App\Models\Visit::factory(rand($user_number+10,$user_number*2))->create();
 
-        $doctors = DB::table('user_datas')->where('role_id', '=', '2')->get();
+        $doctors = DB::table('users')->where('role_id', '=', '2')->get();
         foreach($doctors as $doctor)
             \App\Models\WorkHours::factory()->bindDoctor($doctor->id)->create();
         

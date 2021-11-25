@@ -17,8 +17,10 @@ class VisitFactory extends Factory
      */
     public function definition()
     {
-        $doctors = DB::table('user_datas')->where('role_id', '=', '2')->get();
-        $patients = DB::table('user_datas')->where('role_id', '=', '1')->get();
+        // $doctors = DB::table('user_datas')->where('role_id', '=', '2')->get();
+        // $patients = DB::table('user_datas')->where('role_id', '=', '1')->get();
+        $doctors = DB::table('users')->where('role_id', '=', '2')->get();
+        $patients = DB::table('users')->where('role_id', '=', '1')->get();
         $visit_type_count = count(VisitType::all());
 
         return [
