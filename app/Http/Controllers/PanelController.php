@@ -21,4 +21,7 @@ class PanelController extends Controller
     public function index_pacjent(){
         return view("patient_panel");
     }
+    public function all_doctors_pacjent(){
+        return view("patient_all_doctors");
+    }
 }

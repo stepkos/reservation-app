@@ -7,6 +7,7 @@
     <!-- css imports -->
     <link href="{{ asset('css/panel1.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main_patient.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/patient.css') }}" rel="stylesheet">
     <!-------------------------------------------------------------->
 
     <!-- font imports -->
