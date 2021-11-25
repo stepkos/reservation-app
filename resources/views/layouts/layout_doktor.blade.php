@@ -6,7 +6,7 @@
 
     <!-- css imports -->
     <link href="{{ asset('css/panel1.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main_patient.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/doctor.css') }}" rel="stylesheet">
     <!-------------------------------------------------------------->
 
     <!-- font imports -->
@@ -46,7 +46,7 @@
     <aside>
         <span class="panel_section">Zakładki</span>
         <div class="panel_link">
-            <img src="./images/add.svg"/>
+            <img src="./images/d_visit.svg"/>
             <a href="">Wizyta</a>
         </div>
 
