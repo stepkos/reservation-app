@@ -24,4 +24,7 @@ class PanelController extends Controller
     public function all_doctors_pacjent(){
         return view("patient_all_doctors");
     }
+    public function make_appointment_pacjent(){
+        return view("patient_make_appointment");
+    }
 }
