@@ -54,6 +54,9 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+
+            // Nie dziala ale to cos w tym stylu
+            // 'phone_number' => 'required|regex:/{0-9}-{0-9}-{0-9}/'
         ]);
     }
 
@@ -76,6 +79,8 @@ class RegisterController extends Controller
         ]);
 
         if ($user->id != $user_data->id) {
+            $user->delete();
+            $user_data->delete();
             error_log("Brak integralnosci danych miedzy tabelą user i user data");
             report("Brak integralnosci danych miedzy tabelą user i user data");
         }
