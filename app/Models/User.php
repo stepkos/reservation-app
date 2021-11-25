@@ -72,20 +72,17 @@ class User extends Authenticatable
 
     public static function allDoctors(){
         return DB::table('users')
-                // ->join('user_datas', 'users.id', '=','user_datas.id')
                 ->where('users.role_id', 2)
                 ->get();
     }
 
     public static function allPatients(){
         return DB::table('users')
-                // ->join('user_datas', 'users.id', '=','user_datas.id')
                 ->where('users.role_id', 1)
                 ->get();
     }
     public static function allReception(){
         return DB::table('users')
-                // ->join('user_datas', 'users.id', '=','user_datas.id')
                 ->where('users.role_id', 3)
                 ->get();
     }
@@ -101,7 +98,6 @@ class User extends Authenticatable
 
     public static function role($user_id){  // zwraca stringa reprezentującego role ['Patient', 'Doctor', 'Reception']
         return DB::table('users')
-                // ->join('user_datas', 'users.id','=','user_datas.id')
                 ->join('roles', 'users.role_id','=','roles.id')
                 ->where('users.id',$user_id)
                 ->get(['roles.role'])
