@@ -30,7 +30,9 @@
     
 
     <nav>
-        <div id="logo_box"></div>
+        <div id="logo_box">
+            <img src="./images/app_logo.png" />
+        </div>
         
         <section id="nav_user">
             <span>John Doe</span>

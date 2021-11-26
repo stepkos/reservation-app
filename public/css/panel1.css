@@ -51,6 +51,14 @@ main{
     background: linear-gradient(180deg, #1ECFE1,#259dff);
     width: 14vw;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_box img{
+    width: 40%;
+    height: 9vh;
 }
 
 #nav_user {
