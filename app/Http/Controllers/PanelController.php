@@ -20,6 +20,13 @@ class PanelController extends Controller
         return view("doktor_panel");
     }
 
+    public function doktor_archive(){
+        return view("doktor_archive");
+    }
+    public function doktor_visit(){
+        return view("doktor_visit");
+    }
+
     public function index_pacjent(){
         return view("patient_panel");
     }

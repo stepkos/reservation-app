@@ -39,6 +39,7 @@ main{
     float: right;
     flex-grow: 1;
     height: 90vh;
+    width: 5vw;
     background-color: #f4f5f9;
 }
 

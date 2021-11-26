@@ -47,12 +47,17 @@
         <span class="panel_section">Zakładki</span>
         <div class="panel_link">
             <img src="./images/d_visit.svg"/>
-            <a href="">Wizyta</a>
+            <a href="{{route('panel_doktor_visit')}}">Aktualna Wizyta</a>
         </div>
 
         <div class="panel_link">
             <img src="./images/cal.svg"/>
-            <a href="">Moje wizyty</a>
+            <a href="{{route('panel_doktor')}}">Zaplanowane wizyty</a>
+        </div>
+
+        <div class="panel_link">
+            <img src="./images/archive.svg"/>
+            <a href="{{route('panel_doktor_archive')}}">Historia wizyt</a>
         </div>
 
     </aside>

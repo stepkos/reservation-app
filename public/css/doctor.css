@@ -7,6 +7,20 @@
     overflow-y: scroll;
     background-color: white;
     border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#visit_holder{
+  width:65%;
+  margin-left: 5%;
+  height:90%;
+  margin-top: 3%;
+  float:left;
+  background-color: white;
+  border-radius: 5%;
 }
 .visit_card{
     width:70%;
@@ -175,3 +189,178 @@
     font-size:1.3em;
     margin-left:7.5%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    |----------------------------------------
+    | CSS do panelu z aktualna wizytą doktora
+    |----------------------------------------
+
+*/
+
+#flex_row_holder1{
+  margin-top:5%;
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;  
+}
+#patient_profile_picture{
+    height:160px;
+    width:160px;
+    border-radius: 100%;
+    background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:5%;
+}
+#patient_name_holder{
+  font-size: 3vw;
+  font-weight: 400;
+  margin-left:5%;
+}
+#patient_name_holder p{
+  margin:5px;
+}
+#patient_name_holder p:nth-of-type(1){
+  font-size: 1.3vw;
+  font-weight: 200;
+}
+#timer_holder{
+  margin-left: 25%;
+  font-size:1.4vw;
+  color:rgb(89, 236, 89);
+  font-weight: bold;
+}
+#timer_holder p{
+  margin:10px;
+}
+
+#visit-type{
+  width:15%;
+  height:auto;
+  padding:10px;
+  color:white;
+  background-color: #63c2ee;
+  font-size:1.5vw;
+  text-align: center;
+  margin-left:5%;
+  margin-top:10%;
+}
+
+#visit-description{
+  width:85%;
+  text-align: justify;
+  margin-left:5%;
+  height:30%;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  overflow-x:auto;
+  padding:20px;
+  font-size:1.5vw;
+  margin-top: 5%;
+}
+
+
+#visit-description::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+#visit-description::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 10px;
+}
+
+/* Handle */
+#visit-description::-webkit-scrollbar-thumb {
+  background: rgb(189, 189, 189);
+background-clip: padding-box;
+}
+
+/* Handle on hover */
+#visit-description::-webkit-scrollbar-thumb:hover {
+  background: rgb(177, 177, 177);
+}
+
+
+#right-holder{
+  float: right;
+  width: 23vw;
+  height: 90vh;
+  margin-right: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#patient-archive-title{
+  width: 100%;
+  height:auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size:2vw;
+  text-align: center;
+  color:white;
+  background-color: #63c2ee;
+  margin-top:10%;
+  border-radius: 2rem;
+}
+
+#patient-older-visits-holder{
+  width:100%;
+  height:78%;
+  margin-top: 5%;
+  overflow-y: scroll;
+}
+
+
+.patient-archive-visit{
+  width:90%;
+  margin-left:5%;
+  height:250px;
+  background-color: white;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+#patient-older-visits-holder article:nth-of-type(1){
+  margin-top:0px;
+}
+
+#patient-older-visits-holder::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+#patient-older-visits-holder::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 10px;
+}
+
+/* Handle */
+#patient-older-visits-holder::-webkit-scrollbar-thumb {
+  background: rgb(189, 189, 189);
+background-clip: padding-box;
+}
+
+/* Handle on hover */
+#patient-older-visits-holder::-webkit-scrollbar-thumb:hover {
+  background: rgb(177, 177, 177);
+}
+
