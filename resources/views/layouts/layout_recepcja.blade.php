@@ -6,7 +6,7 @@
 
     <!-- css imports -->
     <link href="{{ asset('css/panel1.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main_patient.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/reception.css') }}" rel="stylesheet">
     <!-------------------------------------------------------------->
 
     <!-- font imports -->
@@ -20,7 +20,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
     <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
     <!--------------------------------------------------------------->
-    
+
+    <!-- icon imports -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <!--------------------------------------------------------------->
     <title>@yield('title')</title>
 </head>
 <body>
@@ -29,7 +32,9 @@
     
 
     <nav>
-        <div id="logo_box"></div>
+        <div id="logo_box">
+            <img src="./images/app_logo.png" />
+        </div>
         
         <section id="nav_user">
             <span>John Doe</span>

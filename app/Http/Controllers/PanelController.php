@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PanelController extends Controller
 {
 
-    
+
     public function index(){
         return view("panel");
     }
@@ -20,4 +20,15 @@ class PanelController extends Controller
         return view("doktor_panel");
     }
 
+    public function index_pacjent(){
+        return view("patient_panel");
+    }
+
+    public function all_doctors_pacjent(){
+        return view("patient_all_doctors");
+    }
+    
+    public function make_appointment_pacjent(){
+        return view("patient_make_appointment");
+    }
 }

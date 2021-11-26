@@ -1,0 +1,99 @@
+#doctors_list {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#doctors_list_holder{
+    width: 95%;
+    height: 85vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor_holder {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-top: 2%;
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.doctor_profile_picture {
+    height: 8vh;
+    width: 10%;
+    border-radius: 100%;
+    background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#appointment_form_holder{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#appointment_banner {
+    padding: 3%;
+    font-size:4vh;
+    font-weight: bold;
+}
+
+#appointment_form {
+    width: 50%;
+    height: 50vh;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+#appointment_form select {
+    width: 50%;
+    font-size: 3vh;
+    padding: 0.5%;
+    border-radius: 5px;
+    background-color: #dbdcdf;
+    border: none;
+}
+
+#appointment_form textarea {
+    width: 50%;
+    font-size: 2vh;
+    min-height: 10%;
+    min-width: 30%;
+    max-width: 50%;
+    max-height: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#appointment_form input[type=submit]{
+    width: 50%;
+    font-size: 2vh;
+    background-color: #259dff;
+    color: white;
+    padding: 1.5%;
+    border: none;
+    border-radius: 10px;
+}

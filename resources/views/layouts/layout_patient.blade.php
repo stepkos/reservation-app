@@ -7,6 +7,7 @@
     <!-- css imports -->
     <link href="{{ asset('css/panel1.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main_patient.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/patient.css') }}" rel="stylesheet">
     <!-------------------------------------------------------------->
 
     <!-- font imports -->
@@ -48,30 +49,20 @@
     <aside>
         <span class="panel_section">Zakładki</span>
         <div class="panel_link">
+            <img src="./images/cal.svg"/>
+            <a href="">Twoje wizyty</a>
+        </div>
+
+        <div class="panel_link">
             <img src="./images/add.svg"/>
-            <a href="">Umów wizyte</a>
+            <a href="">Umów wizytę</a>
         </div>
 
         <div class="panel_link">
             <img src="./images/search.svg"/>
-            <a href="">Znajdź lekarza</a>
+            <a href="">Zobacz lekarzy</a>
         </div>
 
-        <div class="panel_link">
-            <img src="./images/cal.svg"/>
-            <a href="">Moje wizyty</a>
-        </div>
-
-        <span class="panel_section">Twoi lekarze</span>
-        <div class="panel_link">
-            <img src="./images/person.svg" />
-            <a href="">John Doe</a>
-        </div>
-
-        <div class="panel_link">
-            <img src="./images/person.svg"/>
-            <a href="">John Doe</a>
-        </div>
 
     </aside>
         
@@ -81,10 +72,3 @@
     <main>
         @yield('content')
     </main>
-
-
-
-
-
-
-</body>

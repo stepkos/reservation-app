@@ -6,42 +6,101 @@
 
 
 @section('content')
-    <section id="visits_holder">
+<section id="visits_holder">
+
+
         <article class="visit_card">
-            <span class="visit_doctor_name">Jan Kowalski</span>
-            <span class="visit_date">09.01.2022</span>
-            <span class="visit_recommendations">
-                <a href="">Zobacz zalecenia</a>
-            </span>
+            <div class="visit_color">
+                <span>15 listopada 2021</span>
+                <span>9:30</span>
+            </div>
+
+            <div class="visit_row_content">
+                <section>
+                    <p>Imie i nazwisko pacjenta</p>
+                    <p>Jan Kowalski</p>
+                </section>
+
+                <section>
+                    <p>Typ wizyty</p>
+                    <p>Konsultacja</p>
+                </section>
+
+                <section>
+                    <p>Przewidywany czas</p>
+                    <p>1 godzina</p>
+                </section>
+            </div>
+            <div class="short_note">
+                <div class="short_note_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
         </article>
+
         <article class="visit_card">
-        <span class="visit_doctor_name">Janusz Nowak</span>
-            <span class="visit_date">31.05.2023</span>
-            <span class="visit_recommendations">
-                <a href="">Zobacz zalecenia</a>
-            </span>
+            <div class="visit_color">
+                <span>18 listopada 2021</span>
+                <span>15:30</span>
+            </div>
+
+            <div class="visit_row_content">
+                <section>
+                    <p>Imie i nazwisko pacjenta</p>
+                    <p>Grażyna Kowalska</p>
+                </section>
+
+                <section>
+                    <p>Typ wizyty</p>
+                    <p>Plombowanie</p>
+                </section>
+
+                <section>
+                    <p>Przewidywany czas</p>
+                    <p>2 godziny</p>
+                </section>
+            </div>
+            
+            <div class="short_note">
+            <div class="short_note_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
         </article>
+
         <article class="visit_card">
-        <span class="visit_doctor_name">Jan Paweł</span>
-            <span class="visit_date">21.37.2005</span>
-            <span class="visit_recommendations">
-                <a href="">Zobacz zalecenia</a>
-            </span>
+            <div class="visit_color">
+                <span>18 listopada 2021</span>
+                <span>15:30</span>
+            </div>
+
+            <div class="visit_row_content">
+                <section>
+                    <p>Imie i nazwisko pacjenta</p>
+                    <p>Grażyna Kowalska</p>
+                </section>
+
+                <section>
+                    <p>Typ wizyty</p>
+                    <p>Plombowanie</p>
+                </section>
+
+                <section>
+                    <p>Przewidywany czas</p>
+                    <p>2 godziny</p>
+                </section>
+            </div>
+            
+            <div class="short_note">
+                <div class="short_note_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
         </article>
-        <article class="visit_card">
-        <span class="visit_doctor_name">Eugeniusz Podlaski</span>
-            <span class="visit_date">23.03.2024</span>
-            <span class="visit_recommendations">
-                <a href="">Zobacz zalecenia</a>
-            </span>
-        </article>
-        <article class="visit_card">
-        <span class="visit_doctor_name">Grzegorz Doktorowski</span>
-            <span class="visit_date">09.09.2009</span>
-            <span class="visit_recommendations">
-                <a href="">Zobacz zalecenia</a>
-            </span>
-        </article>  
+
+
+
+
     </section>
 
 

@@ -25,3 +25,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/panel', [App\Http\Controllers\PanelController::class, 'index']);
 Route::get('/panel_recepcja', [App\Http\Controllers\PanelController::class, 'index_recepcja']);
 Route::get('/panel_doktor', [App\Http\Controllers\PanelController::class, 'index_doktor']);
+Route::get('/panel_pacjent', [App\Http\Controllers\PanelController::class, 'index_pacjent']);
+Route::get('/panel_all_doctors', [App\Http\Controllers\PanelController::class, 'all_doctors_pacjent']);
+Route::get('/panel_make_appointment', [App\Http\Controllers\PanelController::class, 'make_appointment_pacjent']);
