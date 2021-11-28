@@ -333,10 +333,21 @@ background-clip: padding-box;
 .patient-archive-visit{
   width:90%;
   margin-left:5%;
-  height:250px;
+  height:300px;
   background-color: white;
   margin-top:50px;
   margin-bottom:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.patient-archive-visit p{
+  align-self: flex-start;
+  margin:0;
+  margin-left:5%;
 }
 #patient-older-visits-holder article:nth-of-type(1){
   margin-top:0px;
@@ -364,3 +375,47 @@ background-clip: padding-box;
   background: rgb(177, 177, 177);
 }
 
+.archive-type{
+  width:60%;
+  height:20%;
+  background-color: #37aee6;
+  color:white;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.4vw;
+}
+
+.patient-archive-visit p:nth-of-type(1){
+  margin-top:5%;
+}
+.patient-archive-visit p:nth-of-type(2){
+  font-size:1.5vw;
+  font-weight: 500;
+}
+.archive-description{
+  width:85%;
+  margin-top:2%;
+  padding: 5%;
+  height:60%;
+  text-align: justify;
+  height:auto;
+  overflow-y: scroll;
+}
+
+.archive-description::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 10px;
+}
+
+/* Handle */
+.archive-description::-webkit-scrollbar-thumb {
+  background: rgb(189, 189, 189);
+background-clip: padding-box;
+}
+
+/* Handle on hover */
+.archive-description::-webkit-scrollbar-thumb:hover {
+  background: rgb(177, 177, 177);
+}

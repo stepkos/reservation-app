@@ -46,24 +46,43 @@
     </div>
 
     <section id="patient-older-visits-holder">
-        <article class="patient-archive-visit">
-          
-        </article>
 
         <article class="patient-archive-visit">
-          
+            <div class="archive-type">
+                Wyrwanie zęba
+            </div>
+
+            <p>15 listopada 2021</p>
+
+            <div class="archive-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa pariatur, dolorem earum officia cumque qui, doloribus odio facere aliquid, animi quasi ea consequatur blanditiis minima veritatis illum laboriosam debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quod et, atque itaque veritatis porro perspiciatis est accusantium aliquam ex odio eos nulla eum ipsum. Saepe eaque alias reprehenderit. Iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis quibusdam placeat ea aliquam ducimus hic nulla maiores repellendus dolor neque nam, ad beatae saepe ipsa? Repudiandae quam minus sint?
+            </div>
         </article>
 
+        
         <article class="patient-archive-visit">
-          
+            <div class="archive-type">
+                Plombowanie
+            </div>
+
+            <p>9 września 2021</p>
+
+            <div class="archive-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa pariatur, dolorem earum officia cumque qui, doloribus odio facere aliquid, animi quasi ea consequatur blanditiis minima veritatis illum laboriosam debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quod et, atque itaque veritatis porro perspiciatis est accusantium aliquam ex odio eos nulla eum ipsum. Saepe eaque alias reprehenderit. Iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis quibusdam placeat ea aliquam ducimus hic nulla maiores repellendus dolor neque nam, ad beatae saepe ipsa? Repudiandae quam minus sint?
+            </div>
         </article>
 
+        
         <article class="patient-archive-visit">
-          
-        </article>
+            <div class="archive-type">
+                Konsultacja
+            </div>
 
-        <article class="patient-archive-visit">
-          
+            <p>9 stycznia 1945</p>
+
+            <div class="archive-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa pariatur, dolorem earum officia cumque qui, doloribus odio facere aliquid, animi quasi ea consequatur blanditiis minima veritatis illum laboriosam debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quod et, atque itaque veritatis porro perspiciatis est accusantium aliquam ex odio eos nulla eum ipsum. Saepe eaque alias reprehenderit. Iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis quibusdam placeat ea aliquam ducimus hic nulla maiores repellendus dolor neque nam, ad beatae saepe ipsa? Repudiandae quam minus sint?
+            </div>
         </article>
     </section>
 
