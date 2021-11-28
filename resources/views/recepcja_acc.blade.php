@@ -13,11 +13,11 @@
             </div>
             <div class="right_text">
                 <span class="description">Imię i nazwisko</span>
-                <span class="visit_doctor_name">Jan Kowalski</span>
+                <span class="visit_pacient_name">Jan Kowalski</span>
                 <span class="description">Adres Email</span>
-                <span class="visit_pacient_name">JBydgoszcz2137@wp.pl</span>
+                <span class="visit_pacient_email">JBydgoszcz2137@wp.pl</span>
                 <span class="description">Obecna rola</span>
-                <span class="visit_type">Lekarz</span>
+                <span class="acc_type">Lekarz</span>
             </div>
             <div class="right_kebab">
                     <select id="select">
@@ -35,12 +35,12 @@
             <img src="..\images\profile_picture.jpg">
         </div>
         <div class="right_text">
-            <span class="description">Imię i nazwisko</span>
-            <span class="visit_doctor_name">Jan Kowalski</span>
-            <span class="description">Adres Email</span>
-            <span class="visit_pacient_name">JBydgoszcz2137@wp.pl</span>
-            <span class="description">Obecna rola</span>
-            <span class="visit_type">Lekarz</span>
+                <span class="description">Imię i nazwisko</span>
+                <span class="visit_pacient_name">Jan Kowalski</span>
+                <span class="description">Adres Email</span>
+                <span class="visit_pacient_email">JBydgoszcz2137@wp.pl</span>
+                <span class="description">Obecna rola</span>
+                <span class="acc_type">Lekarz</span>
         </div>
         <div class="right_kebab">
                 <select id="select">
@@ -58,12 +58,12 @@
             <img src="..\images\profile_picture.jpg">
         </div>
         <div class="right_text">
-            <span class="description">Imię i nazwisko</span>
-            <span class="visit_doctor_name">Jan Kowalski</span>
-            <span class="description">Adres Email</span>
-            <span class="visit_pacient_name">JBydgoszcz2137@wp.pl</span>
-            <span class="description">Obecna rola</span>
-            <span class="visit_type">Lekarz</span>
+                <span class="description">Imię i nazwisko</span>
+                <span class="visit_pacient_name">Jan Kowalski</span>
+                <span class="description">Adres Email</span>
+                <span class="visit_pacient_email">JBydgoszcz2137@wp.pl</span>
+                <span class="description">Obecna rola</span>
+                <span class="acc_type">Lekarz</span>
         </div>
         <div class="right_kebab">
                 <select id="select">
@@ -81,12 +81,12 @@
             <img src="..\images\profile_picture.jpg">
         </div>
         <div class="right_text">
-            <span class="description">Imię i nazwisko</span>
-            <span class="visit_doctor_name">Jan Kowalski</span>
-            <span class="description">Adres Email</span>
-            <span class="visit_pacient_name">JBydgoszcz2137@wp.pl</span>
-            <span class="description">Obecna rola</span>
-            <span class="visit_type">Lekarz</span>
+                <span class="description">Imię i nazwisko</span>
+                <span class="visit_pacient_name">Jan Kowalski</span>
+                <span class="description">Adres Email</span>
+                <span class="visit_pacient_email">JBydgoszcz2137@wp.pl</span>
+                <span class="description">Obecna rola</span>
+                <span class="acc_type">Lekarz</span>
         </div>
         <div class="right_kebab">
                 <select id="select">
@@ -104,12 +104,12 @@
             <img src="..\images\profile_picture.jpg">
         </div>
         <div class="right_text">
-            <span class="description">Imię i nazwisko</span>
-            <span class="visit_doctor_name">Jan Kowalski</span>
-            <span class="description">Adres Email</span>
-            <span class="visit_pacient_name">JBydgoszcz2137@wp.pl</span>
-            <span class="description">Obecna rola</span>
-            <span class="visit_type">Lekarz</span>
+                <span class="description">Imię i nazwisko</span>
+                <span class="visit_pacient_name">Jan Kowalski</span>
+                <span class="description">Adres Email</span>
+                <span class="visit_pacient_email">JBydgoszcz2137@wp.pl</span>
+                <span class="description">Obecna rola</span>
+                <span class="acc_type">Lekarz</span>
         </div>
         <div class="right_kebab">
                 <select id="select">
