@@ -11,8 +11,12 @@ class Visit extends Model
 {
     use HasFactory;
 
+    public static function allFullData() {
+        return DB::table('full_visit_view')
+                    ->get();
+    }
 
-    public static function fullData($visit_id){
+    public static function fullData($visit_id) {
         return DB::table('full_visit_view')
                     ->where('visit_id','=',$visit_id)
                     ->get();

@@ -36,7 +36,9 @@ Route::group(['middleware' => 'auth'], function() {
 
 
     // Reception
-    Route::get('/reception_home', [ReceptionController::class, 'get_home']);
+    // TODO wyciagnij i wpisz dane
+    Route::get('/reception_home', [ReceptionController::class, 'get_home']); 
+
 
 
 });
