@@ -38,4 +38,10 @@ class PanelController extends Controller
     public function make_appointment_pacjent(){
         return view("patient_make_appointment");
     }
+    public function add_doctor_reception(){
+        return view("recepcja_acc");
+    }
+    public function reception_history(){
+        return view("reception_history");
+    }
 }

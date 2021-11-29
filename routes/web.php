@@ -34,3 +34,5 @@ Route::get('/panel_doktor_visit', [App\Http\Controllers\PanelController::class, 
 Route::get('/panel_pacjent', [App\Http\Controllers\PanelController::class, 'index_pacjent']);
 Route::get('/panel_all_doctors', [App\Http\Controllers\PanelController::class, 'all_doctors_pacjent']);
 Route::get('/panel_make_appointment', [App\Http\Controllers\PanelController::class, 'make_appointment_pacjent']);
+Route::get('/recepcja_acc', [App\Http\Controllers\PanelController::class, 'add_doctor_reception']);
+Route::get('/recepcja_history', [App\Http\Controllers\PanelController::class, 'reception_history']);
