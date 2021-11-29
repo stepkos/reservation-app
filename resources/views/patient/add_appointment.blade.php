@@ -10,14 +10,14 @@
     </div>
     <form id="appointment_form">
         <select id="form_doctor" name="doctor_name">
-            <option>Johnny Sins</option>
-            <option>Jerzy Nowak</option>
-            <option>Andrzej Andrzej</option>
+            @foreach($doctors as $doctor)
+                <option value="{{ $doctor->id }}">{{ $doctor->name }}</option>
+            @endforeach
         </select>
         <select id="form_doctor" name="visit_type">
-            <option>Wyrywanie zęba</option>
-            <option>Leczenie kanałowe</option>
-            <option>Wstawienie plomby</option>
+            @foreach($visitTypes as $visitType)
+                <option value="{{ $visitType->id }}">{{ $visitType->type }}</option>
+            @endforeach
         </select>
         <textarea id="form_description" placeholder="Krótki opis dla lekarza..." name="short_description"></textarea>
         <input type="submit" />

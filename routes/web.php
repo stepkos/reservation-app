@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PanelController;
+use App\Http\Controllers\PatientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,22 +26,26 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 // Below uri's for login users
+// TUTAJ WRZUCAMY GOTOWE 
 Route::group(['middleware' => 'auth'], function() {
+
+    // Patient
+    Route::get('/patient_all_doctors', [PatientController::class, 'get_all_doctors']);
+    Route::get('/patient_add_appointment', [PatientController::class, 'get_add_appointment']);
 
 });
 
 
 // For reception
-Route::get('/panel_recepcja', [App\Http\Controllers\PanelController::class, 'index_recepcja']);
+Route::get('/panel_recepcja', [PanelController::class, 'index_recepcja']);
 
 // For docktors
-Route::get('/panel_doktor', [App\Http\Controllers\PanelController::class, 'index_doktor'])->name('panel_doktor');
-Route::get('/panel_doktor_archive', [App\Http\Controllers\PanelController::class, 'doktor_archive'])->name('panel_doktor_archive');
-Route::get('/panel_doktor_visit', [App\Http\Controllers\PanelController::class, 'doktor_visit'])->name('panel_doktor_visit');
+Route::get('/panel_doktor', [PanelController::class, 'index_doktor'])->name('panel_doktor');
+Route::get('/panel_doktor_archive', [PanelController::class, 'doktor_archive'])->name('panel_doktor_archive');
+Route::get('/panel_doktor_visit', [PanelController::class, 'doktor_visit'])->name('panel_doktor_visit');
 
-// For all users
-Route::get('/panel_pacjent', [App\Http\Controllers\PanelController::class, 'index_pacjent']);
-Route::get('/all_doctors', [PanelController::class, 'all_doctors']);
-Route::get('/panel_make_appointment', [App\Http\Controllers\PanelController::class, 'make_appointment_pacjent']);
-Route::get('/recepcja_acc', [App\Http\Controllers\PanelController::class, 'add_doctor_reception']);
-Route::get('/recepcja_history', [App\Http\Controllers\PanelController::class, 'reception_history']);
+
+Route::get('/panel_pacjent', [PanelController::class, 'index_pacjent']);
+
+Route::get('/recepcja_acc', [PanelController::class, 'add_doctor_reception']);
+Route::get('/recepcja_history', [PanelController::class, 'reception_history']);

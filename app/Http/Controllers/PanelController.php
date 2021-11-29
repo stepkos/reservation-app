@@ -19,6 +19,7 @@ class PanelController extends Controller
     public function doktor_archive(){
         return view("doktor_archive");
     }
+
     public function doktor_visit(){
         return view("doktor_visit");
     }
@@ -27,13 +28,6 @@ class PanelController extends Controller
         return view("patient_panel");
     }
 
-    public function all_doctors() {
-        return view("all_doctors", ["doctors" => User::allDoctors()]);
-    }
-    
-    public function make_appointment_pacjent(){
-        return view("patient_make_appointment");
-    }
     public function add_doctor_reception(){
         return view("recepcja_acc");
     }
