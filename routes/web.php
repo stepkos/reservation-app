@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PanelController;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\ReceptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,11 +34,13 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/patient_all_doctors', [PatientController::class, 'get_all_doctors']);
     Route::get('/patient_add_appointment', [PatientController::class, 'get_add_appointment']);
 
+
+    // Reception
+    Route::get('/reception_home', [ReceptionController::class, 'get_home']);
+
+
 });
 
-
-// For reception
-Route::get('/panel_recepcja', [PanelController::class, 'index_recepcja']);
 
 // For docktors
 Route::get('/panel_doktor', [PanelController::class, 'index_doktor'])->name('panel_doktor');
