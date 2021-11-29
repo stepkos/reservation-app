@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PanelController extends Controller
@@ -26,8 +27,8 @@ class PanelController extends Controller
         return view("patient_panel");
     }
 
-    public function all_doctors_pacjent(){
-        return view("patient_all_doctors");
+    public function all_doctors() {
+        return view("all_doctors", ["doctors" => User::allDoctors()]);
     }
     
     public function make_appointment_pacjent(){
