@@ -66,30 +66,6 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    // protected function create(array $data)
-    // {
-    //     $user = User::create([
-    //         'name' => $data['name'],
-    //         'email' => $data['email'],
-    //         'password' => Hash::make($data['password']),
-    //     ]);
-
-    //     $user_data = User_data::create([
-    //         'phone' => $data['phone_number']
-    //     ]);
-
-    //     if ($user->id != $user_data->id) {
-    //         $user->delete();
-    //         $user_data->delete();
-    //         error_log("Brak integralnosci danych miedzy tabelą user i user data");
-    //         report("Brak integralnosci danych miedzy tabelą user i user data");
-    //     }
-    //     else {
-    //         return $user;
-    //     }
-        
-    // }
-
     protected function create(array $data)
     {
         return User::create([

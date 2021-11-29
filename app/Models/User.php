@@ -48,46 +48,37 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-
-    // public function user_data()
-    // {
-    //     return $this->hasOne(User_data::class, 'id');
-    // }
-
-    public function work_hours()
-    {
+    public function work_hours() {
         return $this->hasOne(WorkHours::class, 'id_doctor');
     }
 
-    public function visit_patient(){
+    public function visit_patient() {
         return $this->hasMany(Visit::class, 'id_patient');
     }
-
     
-    public function visit_doctor(){
+    public function visit_doctor() {
         return $this->hasMany(Visit::class, 'id_doctor');
     }
 
-
-
-    public static function allDoctors(){
+    public static function allDoctors() {
         return DB::table('users')
                 ->where('users.role_id', 2)
                 ->get();
     }
 
-    public static function allPatients(){
+    public static function allPatients() {
         return DB::table('users')
                 ->where('users.role_id', 1)
                 ->get();
     }
-    public static function allReception(){
+
+    public static function allReception() {
         return DB::table('users')
                 ->where('users.role_id', 3)
                 ->get();
     }
 
-    public static function doctorWorkHours($doctor_id){ //jeżeli podano użytkownika, która nie jest doktorem zwraca null
+    public static function doctorWorkHours($doctor_id) { //jeżeli podano użytkownika, która nie jest doktorem zwraca null
         $workHours = DB::table('users')
                     ->join('work_hours', 'users.id','=','work_hours.doctor_id')
                     ->where('users.id',$doctor_id)
@@ -96,7 +87,7 @@ class User extends Authenticatable
         return ($workHours != []) ? $workHours : null;
     }
 
-    public static function role($user_id){  // zwraca stringa reprezentującego role ['Patient', 'Doctor', 'Reception']
+    public static function role($user_id) {  // zwraca stringa reprezentującego role ['Patient', 'Doctor', 'Reception']
         return DB::table('users')
                 ->join('roles', 'users.role_id','=','roles.id')
                 ->where('users.id',$user_id)
@@ -104,12 +95,11 @@ class User extends Authenticatable
                 ->toArray()[0]['role'];
     }
 
-    public static function allVisits($user_id){ // nie identyfikuje roli użytkownika
-            return DB::table('full_visit_view')
-                        ->where('patient_id','=',$user_id)
-                        ->orWhere('doctor_id','=',$user_id)
-                        ->get();
+    public static function allVisits($user_id) { // nie identyfikuje roli użytkownika
+        return DB::table('full_visit_view')
+                    ->where('patient_id','=',$user_id)
+                    ->orWhere('doctor_id','=',$user_id)
+                    ->get();
     }
-
 
 }
