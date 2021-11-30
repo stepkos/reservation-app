@@ -14,4 +14,12 @@ class ReceptionController extends Controller
         return view("reception.home", compact('visits'));
     }
 
+    public function get_accounts() {
+        return view("reception.accounts");
+    }
+
+    public function get_history() {
+        return view("reception.history");
+    }
+
 }

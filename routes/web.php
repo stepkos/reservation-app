@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\DoctorController;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\PanelController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ReceptionController;
 
@@ -27,7 +27,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 // Below uri's for login users
-// TUTAJ WRZUCAMY GOTOWE 
 Route::group(['middleware' => 'auth'], function() {
 
     // Patient
@@ -43,12 +42,12 @@ Route::group(['middleware' => 'auth'], function() {
     // ------------------------------------------------ //
     //      Not complete yet (doesnt show the data)     //
     // ------------------------------------------------ //
-    Route::get('/panel_doktor', [PanelController::class, 'index_doktor'])->name('panel_doktor');
-    Route::get('/panel_doktor_archive', [PanelController::class, 'doktor_archive'])->name('panel_doktor_archive');
-    Route::get('/panel_doktor_visit', [PanelController::class, 'doktor_visit'])->name('panel_doktor_visit');
+    Route::get('/doctor_home', [DoctorController::class, 'get_home'])->name('panel_doktor');
+    Route::get('/doctor_home_archive', [DoctorController::class, 'get_home_archive'])->name('panel_doktor_archive');
+    Route::get('/doktor_visit', [DoctorController::class, 'get_visit'])->name('panel_doktor_visit');
     
-    Route::get('/recepcja_acc', [PanelController::class, 'add_doctor_reception']);
-    Route::get('/recepcja_history', [PanelController::class, 'reception_history']);
+    Route::get('/reception_accounts', [ReceptionController::class, 'get_accounts']);
+    Route::get('/reception_history', [ReceptionController::class, 'get_history']);
 
 });
 
