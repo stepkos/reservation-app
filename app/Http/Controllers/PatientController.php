@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class PatientController extends Controller
 {
+
+    public function get_home(){
+        $visits = User::allVisits(auth()->user()->id);
+        return view("patient.home", compact('visits'));
+    }
+
     public function get_all_doctors() {
         return view("patient.all_doctors", ["doctors" => User::allDoctors()]);
     }

@@ -31,6 +31,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => 'auth'], function() {
 
     // Patient
+    Route::get('/patient_home', [PatientController::class, 'get_home']);
     Route::get('/patient_all_doctors', [PatientController::class, 'get_all_doctors']);
     Route::get('/patient_add_appointment', [PatientController::class, 'get_add_appointment']);
 
@@ -47,9 +48,6 @@ Route::group(['middleware' => 'auth'], function() {
 Route::get('/panel_doktor', [PanelController::class, 'index_doktor'])->name('panel_doktor');
 Route::get('/panel_doktor_archive', [PanelController::class, 'doktor_archive'])->name('panel_doktor_archive');
 Route::get('/panel_doktor_visit', [PanelController::class, 'doktor_visit'])->name('panel_doktor_visit');
-
-
-Route::get('/panel_pacjent', [PanelController::class, 'index_pacjent']);
 
 Route::get('/recepcja_acc', [PanelController::class, 'add_doctor_reception']);
 Route::get('/recepcja_history', [PanelController::class, 'reception_history']);

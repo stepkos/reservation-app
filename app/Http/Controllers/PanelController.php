@@ -20,10 +20,6 @@ class PanelController extends Controller
         return view("doktor_visit");
     }
 
-    public function index_pacjent(){
-        return view("patient_panel");
-    }
-
     public function add_doctor_reception(){
         return view("recepcja_acc");
     }
