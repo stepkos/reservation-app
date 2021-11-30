@@ -66,6 +66,10 @@
             <a href="">Administruj kontami</a>
         </div>
 
+        <div class="panel_link">
+            <img src="./images/search.svg" />
+            <a href="">Historia wizyt</a>
+        </div>
 
     </aside>
 
