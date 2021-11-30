@@ -42,9 +42,9 @@ Route::group(['middleware' => 'auth'], function() {
     // ------------------------------------------------ //
     //      Not complete yet (doesnt show the data)     //
     // ------------------------------------------------ //
-    Route::get('/doctor_home', [DoctorController::class, 'get_home'])->name('panel_doktor');
-    Route::get('/doctor_home_archive', [DoctorController::class, 'get_home_archive'])->name('panel_doktor_archive');
-    Route::get('/doktor_visit', [DoctorController::class, 'get_visit'])->name('panel_doktor_visit');
+    Route::get('/doctor_home', [DoctorController::class, 'get_home'])->name('doctor_home');
+    Route::get('/doctor_home_archive', [DoctorController::class, 'get_home_archive'])->name('doctor_home_archive');
+    Route::get('/doktor_visit', [DoctorController::class, 'get_visit'])->name('doktor_visit');
     
     Route::get('/reception_accounts', [ReceptionController::class, 'get_accounts']);
     Route::get('/reception_history', [ReceptionController::class, 'get_history']);
