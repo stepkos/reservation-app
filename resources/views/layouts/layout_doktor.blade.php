@@ -58,7 +58,7 @@
 
         <div class="panel_link">
             <img src="./images/cal.svg" />
-            <a href="{{route('panel_doktor')}}">Zaplanowane wizyty</a>
+            <a href="{{route('panel_doktor')}}" style="font-size:1vw;">Zaplanowane wizyty</a>
         </div>
 
         <div class="panel_link">
