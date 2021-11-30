@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,24 +27,21 @@
     <!--------------------------------------------------------------->
     <title>@yield('title')</title>
 </head>
+
 <body>
-
-
-    
 
     <nav>
         <div id="logo_box">
             <img src="./images/app_logo.png" />
         </div>
-        
+
         <section id="nav_user">
             <span>{{ auth()->user()->name }}</span>
 
             <!-- to jakoś dynamicznie zrobić -->
             <div id="profile_picture_holder" style="background-image: url('./images/profile_picture.jpg')"></div>
-            
-            <span id="logout" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
+
+            <span id="logout" href="{{ route('logout') }}" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">
                 Wyloguj się
             </span>
@@ -53,28 +51,23 @@
             </form>
 
         </section>
-        
-    </nav>
 
-   
+    </nav>
 
     <aside>
         <span class="panel_section">Zakładki</span>
         <div class="panel_link">
-            <img src="./images/add.svg"/>
+            <img src="./images/add.svg" />
             <a href="">wizyty</a>
         </div>
 
         <div class="panel_link">
-            <img src="./images/search.svg"/>
+            <img src="./images/search.svg" />
             <a href="">Administruj kontami</a>
         </div>
 
 
     </aside>
-        
-    
-
 
     <main>
         @yield('content')
