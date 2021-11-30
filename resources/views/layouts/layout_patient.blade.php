@@ -35,7 +35,7 @@
         </div>
         
         <section id="nav_user">
-            <span>John Doe</span>
+            <span>{{ auth()->user()->name }}</span>
 
             <!-- to jakoś dynamicznie zrobić -->
             <div id="profile_picture_holder" style="background-image: url('./images/profile_picture.jpg')"></div>
