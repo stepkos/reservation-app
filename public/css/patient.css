@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-#doctors_list_holder{
+#doctors_list_holder {
     width: 95%;
     height: 85vh;
     overflow-y: scroll;
@@ -96,4 +96,14 @@
     padding: 1.5%;
     border: none;
     border-radius: 10px;
+}
+
+input[type=date] {
+    width: 50%;
+    font-size: 2vh;
+}
+
+input[type=time] {
+    width: 50%;
+    font-size: 2vh;
 }

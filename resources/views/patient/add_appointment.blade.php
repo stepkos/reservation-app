@@ -20,6 +20,8 @@
             @endforeach
         </select>
         <textarea id="form_description" placeholder="Krótki opis dla lekarza..." name="short_description"></textarea>
+        <input type="date" name="visit_date" />
+        <input type="time" name="visit_time" />
         <input type="submit" />
     </form>
 </div>
