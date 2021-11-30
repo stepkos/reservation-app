@@ -56,17 +56,17 @@
         <span class="panel_section">Zakładki</span>
         <div class="panel_link">
             <img src="./images/cal.svg" />
-            <a href="">Twoje wizyty</a>
+            <a href="{{route('patient_home')}}">Twoje wizyty</a>
         </div>
 
         <div class="panel_link">
             <img src="./images/add.svg" />
-            <a href="">Umów wizytę</a>
+            <a href="{{route('patient_add_appointment')}}">Umów wizytę</a>
         </div>
 
         <div class="panel_link">
             <img src="./images/search.svg" />
-            <a href="">Zobacz lekarzy</a>
+            <a href="{{route('patient_all_doctors')}}">Zobacz lekarzy</a>
         </div>
 
 

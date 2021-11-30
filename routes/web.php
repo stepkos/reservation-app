@@ -30,12 +30,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => 'auth'], function() {
 
     // Patient
-    Route::get('/patient_home', [PatientController::class, 'get_home']);
-    Route::get('/patient_all_doctors', [PatientController::class, 'get_all_doctors']);
-    Route::get('/patient_add_appointment', [PatientController::class, 'get_add_appointment']);
+    Route::get('/patient_home', [PatientController::class, 'get_home'])->name('patient_home');
+    Route::get('/patient_all_doctors', [PatientController::class, 'get_all_doctors'])->name('patient_all_doctors');
+    Route::get('/patient_add_appointment', [PatientController::class, 'get_add_appointment'])->name('patient_add_appointment');
 
     // Reception
-    Route::get('/reception_home', [ReceptionController::class, 'get_home']); 
+    Route::get('/reception_home', [ReceptionController::class, 'get_home'])->name('reception_home'); 
 
     // For doctor
 
@@ -46,8 +46,8 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/doctor_home_archive', [DoctorController::class, 'get_home_archive'])->name('doctor_home_archive');
     Route::get('/doktor_visit', [DoctorController::class, 'get_visit'])->name('doktor_visit');
     
-    Route::get('/reception_accounts', [ReceptionController::class, 'get_accounts']);
-    Route::get('/reception_history', [ReceptionController::class, 'get_history']);
+    Route::get('/reception_accounts', [ReceptionController::class, 'get_accounts'])->name('reception_accounts');
+    Route::get('/reception_history', [ReceptionController::class, 'get_history'])->name('reception_history');
 
 });
 

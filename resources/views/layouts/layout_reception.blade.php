@@ -58,17 +58,17 @@
         <span class="panel_section">Zakładki</span>
         <div class="panel_link">
             <img src="./images/add.svg" />
-            <a href="">wizyty</a>
+            <a href="{{route('reception_home')}}">Wizyty</a>
         </div>
 
         <div class="panel_link">
             <img src="./images/search.svg" />
-            <a href="">Administruj kontami</a>
+            <a href="{{route('reception_accounts')}}">Administruj kontami</a>
         </div>
 
         <div class="panel_link">
             <img src="./images/search.svg" />
-            <a href="">Historia wizyt</a>
+            <a href="{{route('reception_history')}}">Historia wizyt</a>
         </div>
 
     </aside>
