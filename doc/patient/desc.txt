@@ -3,7 +3,7 @@ Panel główny pacjenta:
 W tym panelu pacjent widzi wszystkie swoje najbliższe wizyty które zostały zatwierdzone przez recepcję, widzi on ich datę, imię oraz nazwisko lekarza, a także rodzaj wizyty i przewidywany czas trwania. Pod tym wszystkim znajduje się krótka notka od lekarza.
 Po prawej stronie znajduje się kalendarz na którym może wybierać datę dzięki której pod kalendarzem zobaczy wizyty zaplanowane na dany dzień. Po lewej stronie znajduje się menu nawigacyjne.
 
-Panel wszystkich pacjentów:
+Panel wszystkich doktorow
 
 W tym panelu pacjent może zobaczyć wszystkich lekarzy pracujących w klinice, ma podane ich zdjęcia, imiona, nazwiska oraz numer telefonu.
 
