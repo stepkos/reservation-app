@@ -36,7 +36,17 @@
 
             <!-- to jakoś dynamicznie zrobić -->
             <div id="profile_picture_holder" style="background-image: url('./images/profile_picture.jpg')"></div>
-            <span id="logout">Wyloguj się</span>
+            
+            <span id="logout" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                Wyloguj się
+            </span>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                @csrf
+            </form>
+
         </section>
         
     </nav>
@@ -68,9 +78,6 @@
     <main>
         @yield('content')
     </main>
-
-
-
 
 
 
