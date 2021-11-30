@@ -1,0 +1,22 @@
+zaplanowane wizyty : 
+// wstaw tu index.png
+pokazuje nadchodzące, zaplanowane wizyty lekarza z pacjentami w formie kart, 
+a także co później zostanie zaimplementowane w formie graficznej na kalendarzu znajdującemu się po prawej stronie
+
+
+historia wizyt : 
+// tu wstaw archive_visits.png
+ta podstrona pokazuje lekarzowi jego historię spotkań z 
+wszystkimi pacjentami w historii jego działalności w klinice.
+Po prawej znajduje się kalendarz wyświetlający nadchodzące, najbliższe terminy
+
+aktualna wizyta :
+// tu wstaw actual_visit.png
+ta podstrona uaktywnia się tylko i wyłącznie jeżeli lekarz ma w tym momencie spotkanie z pacjentem, 
+sprawdzana i porównana zostaje data i godzina najbliższego spotkania. Na czas wizyty, określonej przykłądowym czasem
+np. dla konsultacji jest to jedna godzina, lekarz widzi pełną historię wcześniejszych wizyt pacjenta jak i również
+notkę, którą napisał na to spotkanie. W prawym górnym rogu znajduje się stoper odmierzający czas pozostały do końca wizyty,
+po tym czasie jeżeli lekarz wyjdzie z tej podstrony, nie ma możliwości powrotu. Chroni to dane wcześniejszych wizyt pacjenta
+
+
+
