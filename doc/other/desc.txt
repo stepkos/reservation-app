@@ -1,0 +1,14 @@
+rejestaracja:
+Strona umożliwia rejestracje nowych użytkowników w aplikacji.
+Daje podawane przez użytkoniwka to:
+- Imie i Nazwisko
+- Email
+- Numer telefonu
+- Hasło
+- Powtórzenie hasla
+
+login:
+Strona umożliwiająca zalogowanie się zarejestrowanemu wcześniej użytkownikowi. Forumarz obsługuje błędy oraz waliduje dane.
+Dane podawne do logowania:
+- Email
+- Haslo
