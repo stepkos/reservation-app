@@ -1,0 +1,37 @@
+1.
+    Panel główny recepcji
+
+Co pokazuje:
+    -Datę i godzinę wizyty 
+    -Typ wizyty
+    -Imię i nazwisko pacjenta
+    -Imię i nazwisko lekarza 
+ 
+Na co pozwala:
+    -Przekładanie wizyt
+    -Odwoływanie wizyt
+
+2. 
+    Panel kont dla recepcji 
+
+Co pokazuje:
+    -Zdjęcie profilowe konta 
+    -Imię i nazwisko przypisane do konta 
+    -Email przypisany do konta 
+    -Typ konta 
+
+Na co pozwala:
+    -Zmiana typów konta np. nadanie kontu pacjenta statusu lekarza czy też recepcji.
+
+3.
+    Panel historii wizyt dla recepcji 
+
+Co pokazuje:
+    -ikonę wizyty 
+    -Imię i nazwisko lekarza 
+    -Imię i nazwisko pacjenta
+    -typ wizyty 
+    -opis zabiegu 
+
+Na co pozwala:
+    -wyszukiwanie wizyt
