@@ -1,4 +1,4 @@
-@extends('layouts.layout_doktor')
+@extends('layouts.layout_doctor')
 
 @section('title', 'Panel doktora')
 

@@ -1,4 +1,4 @@
-@extends('layouts.layout_recepcja')
+@extends('layouts.layout_reception')
 
 @section('title', 'Panel recepcji')
 
