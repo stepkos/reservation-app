@@ -49,15 +49,15 @@ class User extends Authenticatable
     ];
 
     public function work_hours() {
-        return $this->hasOne(WorkHours::class, 'id_doctor');
+        return $this->hasOne(WorkHours::class, 'doctor_id');
     }
 
     public function visit_patient() {
-        return $this->hasMany(Visit::class, 'id_patient');
+        return $this->hasMany(Visit::class, 'patient_id');
     }
     
     public function visit_doctor() {
-        return $this->hasMany(Visit::class, 'id_doctor');
+        return $this->hasMany(Visit::class, 'doctor_id');
     }
 
     public static function allDoctors() {
