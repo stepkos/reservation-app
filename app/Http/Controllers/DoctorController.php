@@ -9,15 +9,14 @@ class DoctorController extends Controller
 {
     public function get_home() {
 
-        // $visits = auth()->user()->visit_doctor;
-
         $visits = User::allFutureVisits(auth()->user()->id);
-        // ddd($vistis);
         return view("doctor.home", compact('visits'));
     }
 
     public function get_home_archive() {
-        return view("doctor.home_archive");
+
+        $visits = User::allArchiveVisits(auth()->user()->id);
+        return view("doctor.home_archive", compact('visits'));
     }
 
     public function get_visit(){

@@ -6,54 +6,31 @@
 @section('content')
 <section id="visits_holder">
         
-
-        <article class="visit_card">
+        @foreach($visits as $visit)
+            <article class="visit_card">
             <div class="visit_color">
-                <span>15 listopada 2020</span>
-                <span>21:30</span>
+                <span>{{ explode(' ', $visit->date)[0] }}</span>
+                <span>{{ explode(' ', $visit->date)[1] }}</span>
             </div>
 
             <div class="visit_row_content">
                 <section>
                     <p>Imie i nazwisko pacjenta</p>
-                    <p>John Starski</p>
+                    <p>{{ $visit->patient }}</p>
                 </section>
 
                 <section>
                     <p>Typ wizyty</p>
-                    <p>Konsultacja</p>
+                    <p>{{ $visit->type}}</p>
                 </section>
 
                 <section>
                     <p>Przewidywany czas</p>
-                    <p>1 godzina</p>
+                    <p>{{ $visit->standard_duration }}</p>
                 </section>
             </div>
-        </article>
-
-        <article class="visit_card">
-            <div class="visit_color">
-                <span>9 września 2019</span>
-                <span>13:30</span>
-            </div>
-
-            <div class="visit_row_content">
-                <section>
-                    <p>Imie i nazwisko pacjenta</p>
-                    <p>Andrzej Tarnowski</p>
-                </section>
-
-                <section>
-                    <p>Typ wizyty</p>
-                    <p>Skaling</p>
-                </section>
-
-                <section>
-                    <p>Przewidywany czas</p>
-                    <p>2 godziny</p>
-                </section>
-            </div>
-        </article>
+            </article>
+        @endforeach
 
 
         
@@ -63,18 +40,14 @@
 
     <section id="calendar_holder">
         <div id="color-calendar"></div>
-        <article class="calendar_event">
-            <span class="calendar_event_name">Janusz Nowak</span>
-            <span class="calendar_event_date">31.05.2023</span>
-        </article>
-        <article class="calendar_event">
-            <span class="calendar_event_name">Grzegorz Doktorowski</span>
-            <span class="calendar_event_date">09.09.2009</span>
-        </article>
-        <article class="calendar_event">
-            <span class="calendar_event_name">Jan Paweł</span>
-            <span class="calendar_event_date">21.37.2005</span>
-        </article>
+
+            @foreach($visits->take(3) as $visit)
+                <article class="calendar_event">
+                    <span class="calendar_event_name">{{ $visit->patient }}</span>
+                    <span class="calendar_event_date">{{ $visit->date }}</span>
+                </article>
+            @endforeach
+
     </section>
 
 
