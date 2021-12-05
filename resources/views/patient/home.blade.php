@@ -45,18 +45,14 @@
 
     <section id="calendar_holder">
         <div id="color-calendar"></div>
-        <article class="calendar_event">
-            <span class="calendar_event_name">Janusz Nowak</span>
-            <span class="calendar_event_date">31.05.2023</span>
-        </article>
-        <article class="calendar_event">
-            <span class="calendar_event_name">Grzegorz Doktorowski</span>
-            <span class="calendar_event_date">09.09.2009</span>
-        </article>
-        <article class="calendar_event">
-            <span class="calendar_event_name">Jan Paweł</span>
-            <span class="calendar_event_date">21.37.2005</span>
-        </article>
+
+        @foreach($visits->take(3) as $visit)
+            <article class="calendar_event">
+                <span class="calendar_event_name">{{ $visit->patient }}</span>
+                <span class="calendar_event_date">{{ $visit->date }}</span>
+            </article>
+        @endforeach
+        
     </section>
 
 

@@ -10,7 +10,7 @@ class PatientController extends Controller
 {
 
     public function get_home(){
-        $visits = User::allVisits(auth()->user()->id);
+        $visits = User::allFutureVisits(auth()->user()->id);
         return view("patient.home", compact('visits'));
     }
 

@@ -102,4 +102,27 @@ class User extends Authenticatable
                     ->get();
     }
 
+    public static function allFutureVisits($user_id) { // nie identyfikuje roli użytkownika
+
+        return DB::table('full_visit_view')
+                    ->where('patient_id','=',$user_id)
+                    ->where('date', '>=', time())
+                    ->orWhere('doctor_id','=',$user_id)
+                    ->where('date', '>=', time())
+                    ->get();
+    }
+
+    public static function allArchiveVisits($user_id) { // nie identyfikuje roli użytkownika
+       
+
+        return DB::table('full_visit_view')
+                    ->where('patient_id','=',$user_id)
+                    ->where('date', '<=', time())
+                    ->orWhere('doctor_id','=',$user_id)
+                    ->where('date', '<=', time())
+                    ->get();
+    }
+
+
+
 }
