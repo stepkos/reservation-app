@@ -99,6 +99,7 @@ class User extends Authenticatable
         return DB::table('full_visit_view')
                     ->where('patient_id','=',$user_id)
                     ->orWhere('doctor_id','=',$user_id)
+                    ->orderBy('date', 'desc')
                     ->get();
     }
 
@@ -109,6 +110,7 @@ class User extends Authenticatable
                     ->where('date', '>=', time())
                     ->orWhere('doctor_id','=',$user_id)
                     ->where('date', '>=', time())
+                    ->orderBy('date', 'desc')
                     ->get();
     }
 
@@ -120,6 +122,7 @@ class User extends Authenticatable
                     ->where('date', '<=', time())
                     ->orWhere('doctor_id','=',$user_id)
                     ->where('date', '<=', time())
+                    ->orderBy('date', 'desc')
                     ->get();
     }
 
