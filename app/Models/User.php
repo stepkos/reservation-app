@@ -139,15 +139,7 @@ class User extends Authenticatable
 
 
     public static function currentVisit($user_id){
-        $current_visit = DB::table('full_visit_view')
-                    ->where('patient_id','=',$user_id)
-                    ->where('date', '<=', time())
-                    ->where('estimated_end', '>=', time())
-                    ->orWhere('doctor_id','=',$user_id)
-                    ->where('date', '<=', time())
-                    ->where('estimated_end', '>=', time())
-                    ->get();
-
+        return DB::select('SELECT * FROM full_visit_view where (doctor_id = ? and date < now() and estimated_end > now()) or (patient_id = ? and date < now() and estimated_end > now()) order by date asc', [$user_id, $user_id]);
     }
 
 

@@ -12,7 +12,7 @@
             <div id="patient_profile_picture" style="background-image: url('./images/profile_picture.jpg')"></div>
             <div id="patient_name_holder">
                 <p>Pacjent</p>
-                <p></p>
+                <p>{{ $visit[0]->patient }}</p>
             </div>
 
             <div id="timer_holder">
@@ -22,13 +22,11 @@
         </div>
 
         <div id="visit-type">
-            Konsultacja
+            {{ $visit[0]->type }}
         </div>
 
         <div id="visit-description">
-            @php
-                print_r($visit);
-            @endphp
+           {{ $visit[0]->description }}
         </div>
 
 </section>
@@ -42,43 +40,22 @@
 
     <section id="patient-older-visits-holder">
 
-        <article class="patient-archive-visit">
-            <div class="archive-type">
-                Wyrwanie zęba
-            </div>
 
-            <p>15 listopada 2021</p>
+        @foreach($patient_archive_visits as $visit)
+            <article class="patient-archive-visit">
+                <div class="archive-type">
+                    {{ $visit->type }}
+                </div>
 
-            <div class="archive-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa pariatur, dolorem earum officia cumque qui, doloribus odio facere aliquid, animi quasi ea consequatur blanditiis minima veritatis illum laboriosam debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quod et, atque itaque veritatis porro perspiciatis est accusantium aliquam ex odio eos nulla eum ipsum. Saepe eaque alias reprehenderit. Iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis quibusdam placeat ea aliquam ducimus hic nulla maiores repellendus dolor neque nam, ad beatae saepe ipsa? Repudiandae quam minus sint?
-            </div>
-        </article>
+                <p>{{ explode(' ', $visit->date)[0] }}</p>
 
-        
-        <article class="patient-archive-visit">
-            <div class="archive-type">
-                Plombowanie
-            </div>
+                <div class="archive-description">
+                    {{ $visit->description }}
+                </div>
+            </article>
+        @endforeach
 
-            <p>9 września 2021</p>
 
-            <div class="archive-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa pariatur, dolorem earum officia cumque qui, doloribus odio facere aliquid, animi quasi ea consequatur blanditiis minima veritatis illum laboriosam debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quod et, atque itaque veritatis porro perspiciatis est accusantium aliquam ex odio eos nulla eum ipsum. Saepe eaque alias reprehenderit. Iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis quibusdam placeat ea aliquam ducimus hic nulla maiores repellendus dolor neque nam, ad beatae saepe ipsa? Repudiandae quam minus sint?
-            </div>
-        </article>
-
-        
-        <article class="patient-archive-visit">
-            <div class="archive-type">
-                Konsultacja
-            </div>
-
-            <p>9 stycznia 1945</p>
-
-            <div class="archive-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa pariatur, dolorem earum officia cumque qui, doloribus odio facere aliquid, animi quasi ea consequatur blanditiis minima veritatis illum laboriosam debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quod et, atque itaque veritatis porro perspiciatis est accusantium aliquam ex odio eos nulla eum ipsum. Saepe eaque alias reprehenderit. Iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis quibusdam placeat ea aliquam ducimus hic nulla maiores repellendus dolor neque nam, ad beatae saepe ipsa? Repudiandae quam minus sint?
-            </div>
-        </article>
     </section>
 
 </section>

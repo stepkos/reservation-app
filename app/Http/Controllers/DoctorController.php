@@ -22,7 +22,8 @@ class DoctorController extends Controller
 
     public function get_visit(){
         $visit = User::currentVisit(auth()->user()->id);
-        return view("doctor.visit", compact('visit'));
+        $patient_archive_visits = User::allArchiveVisits($visit[0]->patient_id);
+        return view("doctor.visit", compact(['visit', 'patient_archive_visits']));
     }
 
 }
