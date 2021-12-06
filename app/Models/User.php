@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -10,6 +11,8 @@ use Laravel\Sanctum\HasApiTokens;
 use App\Models\User_data;
 use App\Models\WorkHours;
 use App\Models\Visit;
+
+use Carbon\Carbon;
 
 use DB;
 
@@ -107,23 +110,44 @@ class User extends Authenticatable
 
         return DB::table('full_visit_view')
                     ->where('patient_id','=',$user_id)
-                    ->where('date', '>=', time())
-                    ->orWhere('doctor_id','=',$user_id)
-                    ->where('date', '>=', time())
-                    ->orderBy('date', 'desc')
+                    ->whereRaw('date > now()')
+                    ->where('approved_by_reception','=','1')
+                    ->orWhere(function($query) use ($user_id){
+                        $query->where('doctor_id','=',$user_id)
+                        ->whereRaw('date > now()')
+                        ->where('approved_by_reception','=','1');
+                    })
+                    ->orderBy('date', 'asc')    
                     ->get();
+
     }
 
     public static function allArchiveVisits($user_id) { // nie identyfikuje roli użytkownika
        
-
         return DB::table('full_visit_view')
+                        ->where('patient_id','=',$user_id)
+                        ->whereRaw('date < now()')
+                        ->where('approved_by_reception','=','1')
+                        ->orWhere(function($query) use ($user_id){
+                            $query->where('doctor_id','=',$user_id)
+                            ->whereRaw('date < now()')
+                            ->where('approved_by_reception','=','1');
+                        })
+                        ->orderBy('date', 'asc')    
+                        ->get();
+    }
+
+
+    public static function currentVisit($user_id){
+        $current_visit = DB::table('full_visit_view')
                     ->where('patient_id','=',$user_id)
                     ->where('date', '<=', time())
+                    ->where('estimated_end', '>=', time())
                     ->orWhere('doctor_id','=',$user_id)
                     ->where('date', '<=', time())
-                    ->orderBy('date', 'desc')
+                    ->where('estimated_end', '>=', time())
                     ->get();
+
     }
 
 

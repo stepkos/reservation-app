@@ -53,7 +53,7 @@
         <span class="panel_section">Zakładki</span>
         <div class="panel_link">
             <img src="./images/d_visit.svg" />
-            <a href="{{route('doktor_visit')}}">Aktualna Wizyta</a>
+            <a href="{{route('doctor_visit')}}">Aktualna Wizyta</a>
         </div>
 
         <div class="panel_link">

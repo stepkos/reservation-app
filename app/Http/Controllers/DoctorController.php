@@ -15,12 +15,14 @@ class DoctorController extends Controller
 
     public function get_home_archive() {
 
-        $visits = User::allArchiveVisits(auth()->user()->id);
-        return view("doctor.home_archive", compact('visits'));
+        $visits_archive = User::allArchiveVisits(auth()->user()->id);
+        $visits_actual = User::allFutureVisits(auth()->user()->id);
+        return view("doctor.home_archive", compact(['visits_archive', 'visits_actual']));
     }
 
     public function get_visit(){
-        return view("doctor.visit");
+        $visit = User::currentVisit(auth()->user()->id);
+        return view("doctor.visit", compact('visit'));
     }
 
 }

@@ -6,7 +6,7 @@
 @section('content')
 <section id="visits_holder">
         
-        @foreach($visits as $visit)
+        @foreach($visits_archive as $visit)
             <article class="visit_card">
             <div class="visit_color">
                 <span>{{ explode(' ', $visit->date)[0] }}</span>
@@ -41,7 +41,7 @@
     <section id="calendar_holder">
         <div id="color-calendar"></div>
 
-            @foreach($visits->take(3) as $visit)
+            @foreach($visits_actual->take(3) as $visit)
                 <article class="calendar_event">
                     <span class="calendar_event_name">{{ $visit->patient }}</span>
                     <span class="calendar_event_date">{{ $visit->date }}</span>
