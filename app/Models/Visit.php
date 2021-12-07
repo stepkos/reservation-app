@@ -21,4 +21,11 @@ class Visit extends Model
                     ->where('visit_id','=',$visit_id)
                     ->get();
     }
+
+
+    public static function allArchiveVisits(){
+        return DB::table('full_visit_view')
+                    ->whereRaw('date < now()')
+                    ->get();
+    }
 }

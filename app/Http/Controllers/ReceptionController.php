@@ -21,7 +21,9 @@ class ReceptionController extends Controller
     }
 
     public function get_history() {
-        return view("reception.history");
+
+        $archiveVisits = Visit::allArchiveVisits();
+        return view("reception.history", compact('archiveVisits'));
     }
 
 }
