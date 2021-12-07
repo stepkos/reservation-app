@@ -55,14 +55,7 @@
     </section>
 
 
-    <script language="javascript">
-        new Calendar({
-            id: '#color-calendar',
-            primaryColor:"#37aee6",
-            theme:"glass",
-            headerBackgroundColor:"#37aee6"
-        })
-    </script>
+    <script language="javascript" src="{{ asset('js/calendar.js') }}"></script>
 
 
 

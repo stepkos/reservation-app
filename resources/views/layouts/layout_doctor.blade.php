@@ -22,6 +22,8 @@
     <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
     <!--------------------------------------------------------------->
 
+    
+
     <title>@yield('title')</title>
 </head>
 

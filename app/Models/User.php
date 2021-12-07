@@ -63,6 +63,12 @@ class User extends Authenticatable
         return $this->hasMany(Visit::class, 'doctor_id');
     }
 
+    public static function allUsers() {
+        return DB::table('users')
+                ->join('roles', 'users.role_id','=','roles.id')
+                ->get();
+    }
+
     public static function allDoctors() {
         return DB::table('users')
                 ->where('users.role_id', 2)
