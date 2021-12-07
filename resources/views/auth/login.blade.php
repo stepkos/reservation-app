@@ -23,11 +23,11 @@
 
             <div id="lewa-gora" class="lewa">
                 <img src="{{ asset('images/dentist-logo.png') }}" id="logo">
-                <p id="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p id="lorem">Witamy w aplikacji gabinetu dentystycznego Healfy<br/> już tylko kilka kroków dzieli Cie od wygodnego planowania swoich wizyt u stomatologa!</p>
             </div>
 
             <div id="formularz">
-                <p id="pacjent">Zaloguj się jako pacjent</p>
+                <p id="pacjent">Zaloguj się na swoje konto</p>
                 <form id="logowanie" method="POST">
                     @csrf
 

@@ -117,11 +117,9 @@ class User extends Authenticatable
         return DB::table('full_visit_view')
                     ->where('patient_id','=',$user_id)
                     ->whereRaw('date > now()')
-                    ->where('approved_by_reception','=','1')
                     ->orWhere(function($query) use ($user_id){
                         $query->where('doctor_id','=',$user_id)
-                        ->whereRaw('date > now()')
-                        ->where('approved_by_reception','=','1');
+                        ->whereRaw('date > now()');
                     })
                     ->orderBy('date', 'asc')    
                     ->get();
@@ -133,11 +131,9 @@ class User extends Authenticatable
         return DB::table('full_visit_view')
                         ->where('patient_id','=',$user_id)
                         ->whereRaw('date < now()')
-                        ->where('approved_by_reception','=','1')
                         ->orWhere(function($query) use ($user_id){
                             $query->where('doctor_id','=',$user_id)
-                            ->whereRaw('date < now()')
-                            ->where('approved_by_reception','=','1');
+                            ->whereRaw('date < now()');
                         })
                         ->orderBy('date', 'asc')    
                         ->get();
