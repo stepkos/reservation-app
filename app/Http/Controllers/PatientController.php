@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class PatientController extends Controller
 {
 
-    public function get_home(){
+    public function get_home() {
         $visits = User::allFutureVisits(auth()->user()->id);
         return view("patient.home", compact('visits'));
     }

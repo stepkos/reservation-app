@@ -20,6 +20,16 @@ class ReceptionController extends Controller
         return view("reception.accounts", compact('allUsers'));
     }
 
+    public function post_accounts(Request $request) {
+
+        User::where('email', $request->get('user_email'))->first()
+            ->update([
+                'role_id' => $request->get('role_id')
+            ]);
+        
+        return redirect()->route('reception_accounts');
+    }
+
     public function get_history() {
 
         $archiveVisits = Visit::allArchiveVisits();

@@ -20,7 +20,7 @@ class DoctorController extends Controller
         return view("doctor.home_archive", compact(['visits_archive', 'visits_actual']));
     }
 
-    public function get_visit(){
+    public function get_visit() {
         $visit = User::currentVisit(auth()->user()->id);
 
         if($visit != null)

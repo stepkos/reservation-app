@@ -37,6 +37,7 @@ Route::group(['middleware' => 'auth'], function() {
     // Reception
     Route::get('/reception_home', [ReceptionController::class, 'get_home'])->name('reception_home'); 
     Route::get('/reception_accounts', [ReceptionController::class, 'get_accounts'])->name('reception_accounts');
+    Route::post('/reception_accounts', [ReceptionController::class, 'post_accounts']);
     
     // Doctor
     Route::get('/doctor_home', [DoctorController::class, 'get_home'])->name('doctor_home');

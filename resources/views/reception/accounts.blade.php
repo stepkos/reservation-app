@@ -25,20 +25,34 @@
                     <span class="acc_type">{{ $user->role }}</span>
                 </div>
                 <div class="right_kebab">
-                        <select id="select">
-                            <option>Pacjent</option>
-                            <option>Lekarz</option>
-                            <option>Recepcja</option>
+
+                    <form method="POST">
+
+                        @csrf
+
+                        <input type="hidden" value="{{ $user->email }}" name="user_email">
+                        
+                        <select id="select" name="role_id">
+                            <option {{ $user->role_id==1 ? "selected": ""}} value="1">Pacjent</option>
+                            <option {{ $user->role_id==2 ? "selected": ""}} value="2">Lekarz</option>
+                            <option {{ $user->role_id==3 ? "selected": ""}} value="3">Recepcja</option>
                         </select>
-                    </div>
+
+                        <!-- Do poprawy  -->
+                        <section id="acc_button_holder">
+                            <button id="acc_button"> Zatwierdź zmiany</button>
+                        </section>
+
+                    </form>
+
                 </div>
+               
+            </div>
                 
         </article>
     @endforeach
 
     </section>
-<section id="acc_button_holder">
-    <button id="acc_button" onclick="" name="acc_button"> Zatwierdź zmiany</button>
-</section>
+
 
 @endsection
