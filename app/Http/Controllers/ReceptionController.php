@@ -14,6 +14,14 @@ class ReceptionController extends Controller
         return view("reception.home", compact('visits'));
     }
 
+    public function del_visit(Request $request) {
+
+        Visit::find($request->get('visit_id'))
+            ->delete();
+        
+        return redirect()->route('reception_home');
+    }
+
     public function get_accounts() {
 
         $allUsers = User::allUsers();

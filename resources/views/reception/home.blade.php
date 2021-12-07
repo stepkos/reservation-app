@@ -26,8 +26,18 @@
                     <span class="visit_type">{{ $visit->type }}</span>
                 </div>
                 <div class="right_buttons">
+
                     <button><i class="fas fa-clock clock" title="Przełóż wizytę"></i></button>
-                    <button><i class="fas fa-ban undo" title="Odwołaj wizytę"></i></button>
+
+                    <form method="POST" action="{{ route('del_visit') }}" >
+                        
+                        @csrf
+
+                        <input type="hidden" name="visit_id" value="{{ $visit->visit_id }}">
+
+                        <button type="submit"><i class="fas fa-ban undo" title="Odwołaj wizytę"></i></button>
+
+                    </form>
                 </div>
         </article>
 
