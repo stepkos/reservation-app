@@ -55,27 +55,58 @@
 }
 
 #appointment_form {
-    width: 50%;
-    height: 50vh;
+    width: 70%;
+    height: 65vh;
     background-color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.16), 0 0 6px rgba(0,0,0,0.23);
+    border-radius: 15px;
     display: flex;
     padding: 1%;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 3vh;
 }
-
+#appointment_work_hours{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -25vh;
+    margin-top: 5vh;
+    gap: 2vh;
+    font-size: 2.5vh;
+}
+.hours{
+    font-size: 3vh;
+    color: black;
+}
+.day{
+    font-size: 2vh;
+    color: #259dff;
+}
+#form_down{
+    margin-top: 10vh;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vh;
+    margin-left: -15vh;
+}
+#error{
+    color: red;
+}
 #appointment_form select {
     width: 50%;
     font-size: 3vh;
     padding: 0.5%;
-    border-radius: 5px;
-    background-color: #dbdcdf;
-    border: none;
+    background-color: white;
+    color: #259dff;
+    border-color:#259dff;
 }
+
 
 #appointment_form textarea {
     width: 50%;
@@ -101,9 +132,11 @@
 input[type=date] {
     width: 50%;
     font-size: 2vh;
+    margin-top: -1vh;
 }
 
 input[type=time] {
     width: 50%;
     font-size: 2vh;
+    margin-bottom: -1vh;
 }
