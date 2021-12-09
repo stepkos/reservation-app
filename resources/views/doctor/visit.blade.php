@@ -25,9 +25,14 @@
             {{ $visit[0]->type }}
         </div>
 
-        <div id="visit-description">
-           {{ $visit[0]->description }}
-        </div>
+        <form id="doctor_visit_form">
+        <textarea id="visit-description" cols="100" rows="5">
+{{ $visit[0]->description }}
+        </textarea> 
+
+        <input type="submit" />
+
+        </form>
 
 </section>
 

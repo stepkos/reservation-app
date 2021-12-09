@@ -237,9 +237,9 @@
     margin-left:5%;
 }
 #patient_name_holder{
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 400;
-  margin-left:5%;
+  margin-left: 3%;
 }
 #patient_name_holder p{
   margin:5px;
@@ -252,7 +252,7 @@
   margin-left: 25%;
   font-size:1.4vw;
   color:rgb(89, 236, 89);
-  font-weight: bold;
+  font-weight: 900;
 }
 #timer_holder p{
   margin:10px;
@@ -273,7 +273,6 @@
 #visit-description{
   width:85%;
   text-align: justify;
-  margin-left:5%;
   height:30%;
   overflow-y: auto;
   overflow-wrap: break-word;
@@ -281,6 +280,36 @@
   padding:20px;
   font-size:1.5vw;
   margin-top: 5%;
+  resize: none;
+}
+
+#doctor_visit_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#doctor_visit_form input[type="submit"] {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 1.5%;
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+    background-color: #63c2ee;
+    border-radius: 1rem;
+    border: none;
+    transition: 0.3s;
+}
+
+#doctor_visit_form input[type="submit"]:hover {
+  border-radius: 0rem;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 
@@ -385,7 +414,7 @@ background-clip: padding-box;
 }
 
 .archive-type{
-  width:60%;
+  width:100%;
   height:20%;
   background-color: #37aee6;
   color:white;
