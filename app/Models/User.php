@@ -101,7 +101,7 @@ class User extends Authenticatable
                 ->join('roles', 'users.role_id','=','roles.id')
                 ->where('users.id',$user_id)
                 ->get(['roles.role'])
-                ->toArray()[0]['role'];
+                ->toArray()[0]->role;
     }
 
     public static function allVisits($user_id) { // nie identyfikuje roli użytkownika
