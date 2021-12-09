@@ -10,6 +10,19 @@
     flex-direction: row;
     margin-bottom: 50px;
 }
+.visit_card_reception{
+  width:72.5%;
+  margin-left: 5%;
+  height:250px;
+  margin-left: 15%;
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  margin-top:50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
 .visit_card_accounts{
   width:72.5%;
   height:250px;
@@ -172,7 +185,20 @@ background-clip: padding-box;
     flex-direction: column;
     background-color:#76dfed;
     color: white;
+    width: 25%;
 
+}
+.visit_date_history{
+  display: flex;
+  justify-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#76dfed;
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  width: 25%;
 }
 .visit_right{
     display: flex;
@@ -191,7 +217,7 @@ background-clip: padding-box;
 }
 .right_buttons{
     margin-left: auto;
-    margin-right: 5vh;
+    margin-right: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,7 +281,6 @@ background-clip: padding-box;
     color: lightcoral;
 }
 .clock:hover{
-
     color: #f8b243;
 }
 .visit_left_photo img{
@@ -307,6 +332,21 @@ background-clip: padding-box;
   -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
   box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
 }
+#select_history{
+  background-color:white;
+  border-color: #76dfed;
+  align-self: center;
+  justify-self: left;
+  height: 4.5vh;
+  width: 25vh;
+  margin-bottom: -4vh;
+  font-size: 2vh;
+  margin-left: 1.5vh;
+  color: #76dfed; 
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+}
 .right_desc{
   margin-left: auto;
   margin-right: 5vh;
@@ -329,18 +369,24 @@ background-clip: padding-box;
 .search{
   background-color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   height: 10%;
+  width: 100%;
 }
 .search input{
-  margin-left: 5%;
+  align-self: center;
+  justify-self: left;
   border-color: #76dfed;
-  border-radius: 2vh;
+  margin-left: 5%;
+  border-radius: 1vh;
   border-width: 0.1vh;
   height: 4vh;
   width: 30vh;
+  font-size: 2vh;
   margin-bottom: -4vh;
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
 }
 .search input::placeholder{
   color: #76dfed;
