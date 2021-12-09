@@ -35,7 +35,7 @@
         </div>
 
         <section id="nav_user">
-            <span>{{ auth()->user()->name }}</span>
+            <span class="name">{{ auth()->user()->name }}</span>
 
             <!-- to jakoś dynamicznie zrobić -->
             <div id="profile_picture_holder" style="background-image: url('./images/profile_picture.jpg')"></div>
@@ -62,12 +62,12 @@
 
         <div class="panel_link">
             <img src="./images/cal.svg" />
-            <a href="{{route('doctor_home')}}" style="font-size:1vw;">Zaplanowane wizyty</a>
+            <a href="{{route('doctor_home')}}">Umówione Wizyty</a>
         </div>
 
         <div class="panel_link">
             <img src="./images/archive.svg" />
-            <a href="{{route('doctor_home_archive')}}">Historia wizyt</a>
+            <a href="{{route('doctor_home_archive')}}">Historia Wizyt</a>
         </div>
 
     </aside>

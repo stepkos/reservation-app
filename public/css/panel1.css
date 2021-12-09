@@ -3,7 +3,7 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -21,8 +21,7 @@ nav {
     justify-content: space-between;
 }
 
-aside{
-    font-family: 'Roboto', sans-serif;
+aside {
     font-size: 2.2vh;
     width: 14vw;
     height: 90vh;
@@ -63,13 +62,17 @@ main{
 }
 
 #nav_user {
-   
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: right;   
     margin-right:5%; 
 }
+
+.name {
+    font-weight: 500;
+}
+
 #profile_picture_holder{
     margin-left: 2%;
     height: 8vh;
@@ -80,16 +83,17 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#logout{
+#logout {
     background-color: rgb(245, 92, 92);
     color:white;
     padding:10px;
     margin-left:10%;
     cursor:pointer;
+    border-radius: 0.3em;
     transition: 0.3s ease-in-out;
 }
-#logout:hover{
-    border-radius: 3em;
+#logout:hover {
+    background-color: red;
 }
 /*
     end of Navbar styles
@@ -102,7 +106,7 @@ main{
     ---------------------------------------------------------
 */
 .panel_section {
-    font-weight: bolder;
+    font-weight: bold;
     margin-top: 10vh;
     color: #1FAEFF;
     font-size: 2.8vh;
@@ -117,6 +121,7 @@ main{
     transition: 0.2s ease-in-out;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-weight: 400;
 }
 .panel_link:hover{
     background-color: #1FAEFF;
