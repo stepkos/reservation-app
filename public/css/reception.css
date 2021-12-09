@@ -28,7 +28,7 @@
 #visits {
   width: 100%;
   height: 90%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #visits_holder_acc{
@@ -48,14 +48,14 @@
 #accounts {
   width: 100%;
   height: 90%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #visits_holder_history{
   width:100%;
   height:90%;
   float:left;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: white;
 }
 

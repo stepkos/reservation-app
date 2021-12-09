@@ -9,7 +9,7 @@
 #doctors_list_holder {
     width: 95%;
     height: 85vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
