@@ -89,9 +89,8 @@ class User extends Authenticatable
     }
 
     public static function doctorWorkHours($doctor_id) { //jeżeli podano użytkownika, która nie jest doktorem zwraca null
-        $workHours = DB::table('users')
-                    ->join('work_hours', 'users.id','=','work_hours.doctor_id')
-                    ->where('users.id',$doctor_id)
+        $workHours = DB::table('work_hours')
+                    ->where('doctor_id',$doctor_id)
                     ->get();
         
         return ($workHours != []) ? $workHours : null;
@@ -138,6 +137,22 @@ class User extends Authenticatable
                         })
                         ->orderBy('date', 'asc')    
                         ->get();
+    }
+
+
+    public static function allVisitsOnDay($user_id, $date){
+
+        $likeExp = "$date%";
+
+        return DB::table('full_visit_view')
+                        ->where('patient_id','=',$user_id)
+                        ->where("date", "LIKE", $likeExp )
+                        ->orWhere(function($query) use ($user_id, $likeExp ){
+                            $query->where('doctor_id','=',$user_id)
+                            ->where("date", "LIKE", $likeExp );
+                        })
+                        ->orderBy('date', 'asc')    
+                        ->get();         
     }
 
 
