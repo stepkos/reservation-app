@@ -29,11 +29,11 @@ class Visit extends Model
                     ->get();
     }
 
-    public static function checkVisitBook($datetime_entered, $doctor_id){   // format daty : '2021-12-09 09:00:00'
+    public static function checkVisitBook($datetime_entered, $doctor_id) {   // format daty : '2021-12-09 09:00:00'
 
         $realDateEntered = strtotime( $datetime_entered );
 
-        //nie można rezerwować wizyty w przeszłości
+        // nie można rezerwować wizyty w przeszłości
         if($realDateEntered < time())
             return -1;
 
@@ -52,7 +52,7 @@ class Visit extends Model
 
         $doctorVisitsThatDay = User::allVisitsOnDay($doctor_id, substr($datetime_entered, 0, 10));
 
-        foreach($doctorVisitsThatDay as $visit){
+        foreach($doctorVisitsThatDay as $visit) {
             $beginVisit = strtotime($visit->date);
             $endVisit = strtotime($visit->estimated_end);
 
@@ -63,6 +63,6 @@ class Visit extends Model
 
         
         // można zarezerwować wizytę
-        return 1;   
+        return 0;   
     }
 }
