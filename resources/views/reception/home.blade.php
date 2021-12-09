@@ -9,7 +9,7 @@
     <div id="visits">
         @foreach($visits as $visit)
 
-            <article class="visit_card">
+            <article class="visit_card_reception">
                 <div class="visit_left">
                     <!-- <span class="visit_date">{{ date('d-m-Y', strtotime($visit->date)); }}</span> -->
                     <!-- <span class="visit_date">{{ date('h:m', strtotime($visit->date)); }}</span> -->
