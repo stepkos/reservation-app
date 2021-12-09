@@ -11,7 +11,7 @@
     <div id="accounts">
         @foreach($allUsers as $user)
 
-            <article class="visit_card">
+            <article class="visit_card_accounts">
                 <div class="visit_right">
                     <div class="visit_left_photo">
                         <img src="..\images\profile_picture.jpg">
