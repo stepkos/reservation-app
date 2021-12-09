@@ -5,11 +5,12 @@
     margin-top: 3%;
     float: left;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 #visits {
@@ -33,15 +34,17 @@
 }
 
 .visit_card {
-    width: 70%;
+    width: 80%;
     height: 13vw;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    margin-top: 100px;
+    -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
     display: flex;
+    border-radius: 15px;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .visit_doctor_name {
@@ -134,15 +137,16 @@
     height: 70px;
     background-color: white;
     border-radius: 0.5rem;
-    -webkit-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
-    box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
     margin-top: 5%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
 }
 
 .calendar_event_name {
-    width: 50%;
+    width: 65%;
     height: 70px;
     font-size: 2vh;
     font-weight: bold;
@@ -152,7 +156,7 @@
 }
 
 .calendar_event_date {
-    width: 50%;
+    width: 35%;
     height: 70px;
     font-size: 2.5vh;
     display: flex;
@@ -173,7 +177,6 @@
 }
 
 .visit_color span:nth-of-type(2) {
-    margin-top: 2.5%;
     font-size: 1.4vw;
     font-weight: 600;
 }
@@ -185,17 +188,16 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    font-weight: 400;
     height: auto;
 }
 
 .visit_row_content p:nth-of-type(1) {
-    font-size: 0.7vw;
-    font-weight: 800;
+    font-size: 0.8vw;
 }
 
 .visit_row_content p:nth-of-type(2) {
-    font-size: 1.8vw;
-    font-weight: 600;
+    font-size: 1.5vw;
 }
 
 .visit_description {
