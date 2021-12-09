@@ -10,6 +10,31 @@
     flex-direction: row;
     margin-bottom: 50px;
 }
+.visit_card_reception{
+  width:72.5%;
+  margin-left: 5%;
+  height:250px;
+  margin-left: 15%;
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  margin-top:50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.visit_card_accounts{
+  width:72.5%;
+  height:250px;
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  margin-top:50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  margin-left: 15.25%;
+}
 
 #visits_holder{
     width:90%;
@@ -18,11 +43,19 @@
     margin-top: 3%;
 
     float:left;
-    overflow-y: scroll;
     background-color: white;
+    display: flex;
+    align-items: center;
 
     border-radius: 5%;
 }
+
+#visits {
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
 #visits_holder_acc{
   width:90%;
   margin-left: 5%;
@@ -30,11 +63,19 @@
   margin-top: 3%;
 
   float:left;
-  overflow-y: scroll;
   background-color: white;
+  display: flex;
+  align-items: center;
 
   border-radius: 5%;
 }
+
+#accounts {
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
 #visits_holder_history{
   width:100%;
   height:90%;
@@ -42,14 +83,65 @@
   overflow-y: scroll;
   background-color: white;
 }
+
+/* Track */
+#visits_holder_history::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right:50px;
+}
+
+/* Handle */
+#visits_holder_history::-webkit-scrollbar-thumb {
+  background: rgb(144, 144, 144);
+  border-right: 4px #f1f1f1 solid;
+background-clip: padding-box;
+}
+
+/* Handle on hover */
+#visits_holder_history::-webkit-scrollbar-thumb:hover {
+  background: rgb(93, 93, 93);
+}
+
 /* width */
-#visits_holder::-webkit-scrollbar {
+#visits_holder_history::-webkit-scrollbar {
+    width: 10px;
+}
+
+#visits::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+#accounts::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right:50px;
+}
+
+/* Handle */
+#accounts::-webkit-scrollbar-thumb {
+  background: rgb(144, 144, 144);
+  border-right: 4px #f1f1f1 solid;
+background-clip: padding-box;
+}
+
+/* Handle on hover */
+#accounts::-webkit-scrollbar-thumb:hover {
+  background: rgb(93, 93, 93);
+}
+
+/* width */
+#accounts::-webkit-scrollbar {
     width: 10px;
   
   }
   
   /* Track */
-  #visits_holder::-webkit-scrollbar-track {
+  #visits::-webkit-scrollbar-track {
     background: #f1f1f1;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -57,14 +149,14 @@
   }
   
   /* Handle */
-  #visits_holder::-webkit-scrollbar-thumb {
+  #visits::-webkit-scrollbar-thumb {
     background: rgb(144, 144, 144);
-    border-right: 4px white solid;
+    border-right: 4px #f1f1f1 solid;
   background-clip: padding-box;
   }
   
   /* Handle on hover */
-  #visits_holder::-webkit-scrollbar-thumb:hover {
+  #visits::-webkit-scrollbar-thumb:hover {
     background: rgb(93, 93, 93);
   }
   .visit_doctor_name {
@@ -93,7 +185,20 @@
     flex-direction: column;
     background-color:#76dfed;
     color: white;
+    width: 25%;
 
+}
+.visit_date_history{
+  display: flex;
+  justify-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#76dfed;
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  width: 25%;
 }
 .visit_right{
     display: flex;
@@ -112,7 +217,7 @@
 }
 .right_buttons{
     margin-left: auto;
-    margin-right: 5vh;
+    margin-right: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +281,6 @@
     color: lightcoral;
 }
 .clock:hover{
-
     color: #f8b243;
 }
 .visit_left_photo img{
@@ -194,14 +298,17 @@
 #acc_button_holder button{
   background-color:#76dfed;
   border-style: none;
-  border-radius: 10vh;
-  width: 20vh;
-  height: 8vh;
+  border-radius: 2.5vh;
+  width: 16vh;
+  height: 7vh;
   float: right;
-  margin-top: 2vh;
-  margin-right: 4vh;
-  font-size: 2vh;
+  margin-top: 7vh;
+  margin-right: 5.5vh;
+  font-size: 1.8vh;
   color: white;
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
 }
 #acc_button_holder button:hover{
   background-color:white;
@@ -209,14 +316,36 @@
   border-style:solid;
   color: #76dfed;
 }
-select {
+#acc_button_holder{
+  margin-right: 1.5vh;
+
+}
+#select {
   background-color:white;
   border-color: #76dfed;
-  width: 15vh;
+  width: 16vh;
   height: 5vh;
+  margin-top: 2vh;
   font-size: 3vh;
-  color: #76dfed;
-  border-radius: 0.1vh;  
+  color: #76dfed; 
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+}
+#select_history{
+  background-color:white;
+  border-color: #76dfed;
+  align-self: center;
+  justify-self: left;
+  height: 4.5vh;
+  width: 25vh;
+  margin-bottom: -4vh;
+  font-size: 2vh;
+  margin-left: 1.5vh;
+  color: #76dfed; 
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
 }
 .right_desc{
   margin-left: auto;
@@ -240,18 +369,24 @@ select {
 .search{
   background-color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   height: 10%;
+  width: 100%;
 }
 .search input{
-  margin-left: 5%;
+  align-self: center;
+  justify-self: left;
   border-color: #76dfed;
-  border-radius: 2vh;
+  margin-left: 5%;
+  border-radius: 1vh;
   border-width: 0.1vh;
   height: 4vh;
   width: 30vh;
+  font-size: 2vh;
   margin-bottom: -4vh;
+  -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
 }
 .search input::placeholder{
   color: #76dfed;
