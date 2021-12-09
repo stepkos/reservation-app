@@ -5,33 +5,33 @@
 
 @section('content')
 <section id="visits_holder">
-        
-        @foreach($visits_archive as $visit)
-            <article class="visit_card">
-            <div class="visit_color">
-                <span>{{ explode(' ', $visit->date)[0] }}</span>
-                <span>{{ explode(' ', $visit->date)[1] }}</span>
-            </div>
+        <div id="visits">
+            @foreach($visits_archive as $visit)
+                <article class="visit_card">
+                <div class="visit_color">
+                    <span>{{ explode(' ', $visit->date)[0] }}</span>
+                    <span>{{ explode(' ', $visit->date)[1] }}</span>
+                </div>
 
-            <div class="visit_row_content">
-                <section>
-                    <p>Imie i nazwisko pacjenta</p>
-                    <p>{{ $visit->patient }}</p>
-                </section>
+                <div class="visit_row_content">
+                    <section>
+                        <p>Imie i nazwisko pacjenta</p>
+                        <p>{{ $visit->patient }}</p>
+                    </section>
 
-                <section>
-                    <p>Typ wizyty</p>
-                    <p>{{ $visit->type}}</p>
-                </section>
+                    <section>
+                        <p>Typ wizyty</p>
+                        <p>{{ $visit->type}}</p>
+                    </section>
 
-                <section>
-                    <p>Przewidywany czas</p>
-                    <p>{{ $visit->standard_duration }}</p>
-                </section>
-            </div>
-            </article>
-        @endforeach
-
+                    <section>
+                        <p>Przewidywany czas</p>
+                        <p>{{ $visit->standard_duration }}</p>
+                    </section>
+                </div>
+                </article>
+            @endforeach
+        </div>
 
         
 

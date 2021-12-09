@@ -7,9 +7,9 @@
 
 <section id="visits_holder">
 
-
+    <div id="visits">
         @foreach($visits as $visit)
-       
+        
         <article class="visit_card">
             <div class="visit_color">
                 <span>{{ explode(' ', $visit->date)[0] }}</span>
@@ -34,9 +34,7 @@
             </div>
         </article>
         @endforeach
-        
-
-
+    </div>
         
 
     </section>
