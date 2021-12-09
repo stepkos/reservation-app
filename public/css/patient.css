@@ -15,6 +15,31 @@
     align-items: center;
 }
 
+/* width */
+#doctors_list_holder::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+#doctors_list_holder::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right:50px;
+}
+  
+  /* Handle */
+#doctors_list_holder::-webkit-scrollbar-thumb {
+    background: rgb(144, 144, 144);
+    border-right: 4px white solid;
+    background-clip: padding-box;
+}
+  
+  /* Handle on hover */
+#doctors_list_holder::-webkit-scrollbar-thumb:hover {
+    background: rgb(93, 93, 93);
+}
+
 .doctor_holder {
     font-size: 3vh;
     font-weight: bold;

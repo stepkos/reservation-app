@@ -82,13 +82,13 @@
 }
 
 /* width */
-#visits_holder::-webkit-scrollbar {
+#visits::-webkit-scrollbar {
     width: 10px;
   
   }
   
   /* Track */
-  #visits_holder::-webkit-scrollbar-track {
+  #visits::-webkit-scrollbar-track {
     background: #f1f1f1;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -96,14 +96,14 @@
   }
   
   /* Handle */
-  #visits_holder::-webkit-scrollbar-thumb {
+  #visits::-webkit-scrollbar-thumb {
     background: rgb(144, 144, 144);
     border-right: 4px white solid;
   background-clip: padding-box;
   }
   
   /* Handle on hover */
-  #visits_holder::-webkit-scrollbar-thumb:hover {
+  #visits::-webkit-scrollbar-thumb:hover {
     background: rgb(93, 93, 93);
   }
 

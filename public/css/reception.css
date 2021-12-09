@@ -59,6 +59,31 @@
   background-color: white;
 }
 
+/* Track */
+#visits_holder_history::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right:50px;
+}
+
+/* Handle */
+#visits_holder_history::-webkit-scrollbar-thumb {
+  background: rgb(144, 144, 144);
+  border-right: 4px #f1f1f1 solid;
+background-clip: padding-box;
+}
+
+/* Handle on hover */
+#visits_holder_history::-webkit-scrollbar-thumb:hover {
+  background: rgb(93, 93, 93);
+}
+
+/* width */
+#visits_holder_history::-webkit-scrollbar {
+    width: 10px;
+}
+
 #visits::-webkit-scrollbar {
   width: 10px;
 
