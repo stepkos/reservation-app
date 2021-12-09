@@ -6,6 +6,12 @@
 @section('content')
 <section class="search">
     <input type="text" placeholder="Znajdź wizytę">
+    <select id="select_history">
+        <option>Data</option>
+        <option>Imię i Nazwisko lekarza</option>
+        <option>Imię i Nazwisko pacjenta</option>
+        <option>Typ zabiegu</option>
+    </select>
 </section>
 <section id="visits_holder_history">
 
@@ -13,10 +19,11 @@
     @foreach($archiveVisits as $visit)
 
         <article class="visit_card">
-            <div class="visit_right">
-                <div class="visit_left_photo">
-                    <img src="..\images\profile_picture.jpg">
+                <div class="visit_date_history">
+                    <span>2022-05-09</br></br>
+                        02:52:09</span>
                 </div>
+            <div class="visit_right">
                 <div class="right_text">
                     <span class="description">Imię i nazwisko lekarza</span>
                     <span class="visit_doctor_name">{{ $visit->doctor}}</span>
