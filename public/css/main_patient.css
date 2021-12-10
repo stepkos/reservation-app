@@ -5,28 +5,46 @@
     margin-top: 3%;
     float: left;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 3%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 #visits {
-    overflow-y: auto;
     width: 100%;
     height: 90%;
+    border-radius: 5%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#visit_holder {
+    width: 65%;
+    margin-left: 5%;
+    height: 90%;
+    margin-top: 3%;
+    float: left;
+    background-color: white;
+    border-radius: 5%;
 }
 
 .visit_card {
-    width: 70%;
-    margin-left: 15%;
-    height: 16vw;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    margin-top: 100px;
+    width: 80%;
+    height: 13vw;
+    -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
     display: flex;
+    border-radius: 15px;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .visit_doctor_name {
@@ -119,15 +137,16 @@
     height: 70px;
     background-color: white;
     border-radius: 0.5rem;
-    -webkit-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
-    box-shadow: 2px 1px 31px -22px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
     margin-top: 5%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
 }
 
 .calendar_event_name {
-    width: 50%;
+    width: 65%;
     height: 70px;
     font-size: 2vh;
     font-weight: bold;
@@ -137,7 +156,7 @@
 }
 
 .calendar_event_date {
-    width: 50%;
+    width: 35%;
     height: 70px;
     font-size: 2.5vh;
     display: flex;
@@ -147,7 +166,7 @@
 
 .visit_color {
     width: 30%;
-    height: 25%;
+    height: 30%;
     background-color: #63c2ee;
     display: flex;
     flex-direction: column;
@@ -158,7 +177,6 @@
 }
 
 .visit_color span:nth-of-type(2) {
-    margin-top: 2.5%;
     font-size: 1.4vw;
     font-weight: 600;
 }
@@ -170,17 +188,16 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    font-weight: 400;
     height: auto;
 }
 
 .visit_row_content p:nth-of-type(1) {
-    font-size: 0.7vw;
-    font-weight: 800;
+    font-size: 0.8vw;
 }
 
 .visit_row_content p:nth-of-type(2) {
-    font-size: 1.8vw;
-    font-weight: 600;
+    font-size: 1.5vw;
 }
 
 .visit_description {
@@ -194,12 +211,270 @@
     margin-left: 7.5%;
 }
 
-.short_note {
+
+/*
+  |----------------------------------------
+  | CSS do panelu z aktualna wizytą doktora
+  |----------------------------------------
+
+*/
+
+#flex_row_holder1 {
+    margin-top: 5%;
     width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    font-size: 2vh;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
+}
+
+#patient_profile_picture {
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+}
+
+#patient_name_holder {
+    font-size: 2.5vw;
+    font-weight: 400;
+    margin-left: 3%;
+}
+
+#patient_name_holder p {
+    margin: 5px;
+}
+
+#patient_name_holder p:nth-of-type(1) {
+    font-size: 1.3vw;
+    font-weight: 200;
+}
+
+#timer_holder {
+    margin-left: 25%;
+    font-size: 1.4vw;
+    color: rgb(89, 236, 89);
+    font-weight: 900;
+}
+
+#timer_holder p {
+    margin: 10px;
+}
+
+#visit-type {
+    width: 15%;
+    height: auto;
+    padding: 10px;
+    color: white;
+    background-color: #63c2ee;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+#visit-description {
+    width: 85%;
+    text-align: justify;
+    height: 30%;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    overflow-x: auto;
+    padding: 20px;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    resize: none;
+}
+
+#doctor_visit_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#doctor_visit_form input[type="submit"] {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 1.5%;
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+    background-color: #63c2ee;
+    border-radius: 1rem;
+    border: none;
+    transition: 0.3s;
+}
+
+#doctor_visit_form input[type="submit"]:hover {
+    border-radius: 0rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#visit-description::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+#visit-description::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    width: 10px;
+}
+
+
+/* Handle */
+
+#visit-description::-webkit-scrollbar-thumb {
+    background: rgb(189, 189, 189);
+    background-clip: padding-box;
+}
+
+
+/* Handle on hover */
+
+#visit-description::-webkit-scrollbar-thumb:hover {
+    background: rgb(177, 177, 177);
+}
+
+#right-holder {
+    float: right;
+    width: 23vw;
+    height: 90vh;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#patient-archive-title {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    background-color: #63c2ee;
+    margin-top: 10%;
+    border-radius: 2rem;
+}
+
+#patient-older-visits-holder {
+    width: 100%;
+    height: 78%;
+    margin-top: 5%;
+    overflow-y: auto;
+}
+
+.patient-archive-visit {
+    width: 90%;
+    margin-left: 5%;
+    height: 300px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.patient-archive-visit p {
+    align-self: flex-start;
+    margin: 0;
+    margin-left: 5%;
+}
+
+#patient-older-visits-holder article:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+#patient-older-visits-holder::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+#patient-older-visits-holder::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    width: 10px;
+}
+
+
+/* Handle */
+
+#patient-older-visits-holder::-webkit-scrollbar-thumb {
+    background: rgb(189, 189, 189);
+    background-clip: padding-box;
+}
+
+
+/* Handle on hover */
+
+#patient-older-visits-holder::-webkit-scrollbar-thumb:hover {
+    background: rgb(177, 177, 177);
+}
+
+.archive-type {
+    width: 100%;
+    height: 20%;
+    background-color: #37aee6;
+    color: white;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+}
+
+.patient-archive-visit p:nth-of-type(1) {
+    margin-top: 5%;
+}
+
+.patient-archive-visit p:nth-of-type(2) {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.archive-description {
+    width: 85%;
+    margin-top: 2%;
+    padding: 5%;
+    height: 60%;
+    text-align: justify;
+    height: auto;
+    overflow-y: auto;
+}
+
+.archive-description::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    width: 10px;
+}
+
+
+/* Handle */
+
+.archive-description::-webkit-scrollbar-thumb {
+    background: rgb(189, 189, 189);
+    background-clip: padding-box;
+}
+
+
+/* Handle on hover */
+
+.archive-description::-webkit-scrollbar-thumb:hover {
+    background: rgb(177, 177, 177);
 }
