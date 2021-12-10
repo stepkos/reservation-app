@@ -5,8 +5,7 @@ let visitsHolder = $("#visits_holder_history")
 let elementsToFilter = $( ".visit_card > div:nth-of-type(1) > span" )
 
 
-
-const changeFilterType = () =>{
+const changeFilterType = () => {
     let filterType = $("#select_history").val()
 
     switch(filterType){
@@ -17,15 +16,13 @@ const changeFilterType = () =>{
     }
 }
 
-
-const filterVisits = () =>{
-
+const filterVisits = () => {
 
     let valueEntered = $("#filter_input").val()
     var re = new RegExp(`^${valueEntered}`);
     visitsHolder.empty()
 
-    visitDivs.each((index)=>{  
+    visitDivs.each((index)=> {  
         console.log(elementsToFilter.eq(index))
         if( elementsToFilter.eq(index).text().trim().match(re) !== null )
             visitDivs.eq(index).appendTo("#visits_holder_history")

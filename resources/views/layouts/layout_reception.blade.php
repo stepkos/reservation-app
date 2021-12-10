@@ -64,7 +64,7 @@
 
         <div class="panel_link">
             <img src="./images/search.svg" />
-            <a href="{{route('reception_accounts')}}">Administruj kontami</a>
+            <a href="{{route('reception_accounts')}}">Zarządzaj kontami</a>
         </div>
 
         <div class="panel_link">
