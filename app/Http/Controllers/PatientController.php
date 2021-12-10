@@ -23,8 +23,9 @@ class PatientController extends Controller
         
         $doctors = User::allDoctors();
         $visitTypes = VisitType::all();
-        
-        return view("patient.add_appointment", compact('doctors', 'visitTypes'));
+        $error_message = "Error test messege";
+
+        return view("patient.add_appointment", compact('doctors', 'visitTypes', 'error_message'));
     }
 
     public function post_add_appointment(Request $request) {

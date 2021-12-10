@@ -30,7 +30,7 @@
             <input type="time" name="visit_time" />
             <input type="submit" />
 
-            <span id="error">Error test test</span>
+            <span id="error">{{ $error_message }}</span>
 
         </div>
         
