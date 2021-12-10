@@ -5,13 +5,15 @@
 
 @section('content')
 <section class="search">
-    <input type="text" placeholder="Znajdź wizytę">
-    <select id="select_history">
-        <option>Data</option>
-        <option>Imię i Nazwisko lekarza</option>
-        <option>Imię i Nazwisko pacjenta</option>
-        <option>Typ zabiegu</option>
+
+    <input type="text" placeholder="Znajdź wizytę" id="filter_input" oninput="filterVisits()">
+    <select id="select_history" onchange="changeFilterType()">
+        <option value="data">Data</option>
+        <option value="doctor">Imię i Nazwisko lekarza</option>
+        <option value="patient">Imię i Nazwisko pacjenta</option>
+        <option value="visit_type">Typ zabiegu</option>
     </select>
+
 </section>
 <section id="visits_holder_history">
 
@@ -20,8 +22,11 @@
 
         <article class="visit_card">
                 <div class="visit_date_history">
-                    <span>2022-05-09</br></br>
-                        02:52:09</span>
+                <span>
+                    {{ explode(' ', $visit->date)[0] }}</br>
+                    {{ explode(' ', $visit->date)[1] }}
+                </span>
+
                 </div>
             <div class="visit_right">
                 <div class="right_text">
@@ -45,4 +50,6 @@
     
     </section>
 
+
+    <script language="javascript" src="{{ asset('js/filter.js') }}"></script>
 @endsection
