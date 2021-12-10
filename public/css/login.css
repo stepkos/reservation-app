@@ -82,6 +82,12 @@
     margin-bottom: 5em;
 }
 
+.login:focus {
+    outline: none;
+    border: none;
+    background-color: #b9b9b9;
+}
+
 #zaloguj {
     background-color: #008DFF;
     font-weight: 300;
@@ -91,10 +97,15 @@
     width: 32vh;
     font-size: 1.5em;
     cursor: pointer;
+    transition: .2s background-color ease-in-out;
+}
+
+#zaloguj:hover {
+    background-color: #0079dd;
 }
 
 .login::-webkit-input-placeholder {
-    font-size: 2em;
+    font-size: 150%;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
@@ -120,6 +131,11 @@
     width: 32vh;
     font-size: 1.5em;
     cursor: pointer;
+    transition: .2s background-color ease-in-out;
+}
+
+#rejestracja:hover {
+    background-color: #DDDDDD;
 }
 
 #log {

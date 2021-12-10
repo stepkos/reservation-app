@@ -82,6 +82,11 @@
     font-size: 1.5em;
     cursor: pointer;
     justify-self: center;
+    transition: .2s background-color ease-in-out;
+}
+
+#rejestracja:hover {
+    background-color: #DDDDDD;
 }
 
 #log {
@@ -136,6 +141,12 @@ input[type="button"]{
     margin-right: 10%;
 }
 
+.register:focus {
+    outline: none;
+    border: none;
+    background-color: #b9b9b9;
+}
+
 .register::-webkit-input-placeholder {
     font-size: 150%;
     font-family: 'Roboto', sans-serif;
@@ -153,6 +164,11 @@ input[type="button"]{
     min-height: 0.5em;
     min-width: 0.5em;
     cursor: pointer;
+    transition: .2s background-color ease-in-out;
+}
+
+#zarejestruj:hover {
+    background-color: #0079dd;
 }
 
 #pacjent {
