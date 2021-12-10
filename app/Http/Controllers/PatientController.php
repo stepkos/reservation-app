@@ -30,20 +30,30 @@ class PatientController extends Controller
 
     public function post_add_appointment(Request $request) {
 
-        $dateOfVisit = $request->get('visit_date').' '.$request->get('visit_time');
-        $doctor_id = $request->get('doctor_id');
+        // TODO SPRAWDZ CZY WARTOSCI NIE SA PUSTE
 
-        $checkDateValue = Visit::checkVisitBook($dateOfVisit, $doctor_id);
+        $visit_date = $request->get('visit_date');
+        $visit_time = $request->get('visit_time');
+        $date = $visit_date.' '.$visit_time;
+
+        $doctor_id = $request->get('doctor_id');
+        $patient_id = $request->get('patient_id');
+        $visit_type_id = $request->get('visit_type_id');
+        $description = $request->get('description');
+
+        $checkDateValue = Visit::checkVisitBook($date, $doctor_id);
+
+        // ddd($checkDateValue);
 
         if ($checkDateValue == 0) {
 
-            Visit::create([
-                'patient_id' => $request->get('patient_id'),
-                'doctor_id' => $doctor_id,
-                'visit_type_id' => $request->get('visit_type_id'),
-                'date' => $dateOfVisit,
-                'description' => $request->get('description')
-            ]);
+            Visit::create(compact(
+                'patient_id',
+                'doctor_id',
+                'visit_type_id',
+                'date',
+                'description'
+            ));
     
             return redirect()->route('patient_add_appointment');
         }
@@ -64,7 +74,14 @@ class PatientController extends Controller
                 break;   
         }
         
-        return view("patient.add_appointment", compact('doctors', 'visitTypes', 'error_message'));
+        return view("patient.add_appointment", 
+            compact('doctors', 'visitTypes', 'error_message',
+                'doctor_id',
+                'visit_type_id',
+                'visit_date',
+                'visit_time',
+                'description'
+            ));
 
     }
 }
