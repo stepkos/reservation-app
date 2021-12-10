@@ -39,6 +39,7 @@
     background: rgb(144, 144, 144);
     border-right: 4px white solid;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 

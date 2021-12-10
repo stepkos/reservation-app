@@ -108,6 +108,7 @@
     background: rgb(144, 144, 144);
     border-right: 4px white solid;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -338,6 +339,7 @@
 #visit-description::-webkit-scrollbar-thumb {
     background: rgb(189, 189, 189);
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -419,6 +421,7 @@
 #patient-older-visits-holder::-webkit-scrollbar-thumb {
     background: rgb(189, 189, 189);
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -470,6 +473,7 @@
 .archive-description::-webkit-scrollbar-thumb {
     background: rgb(189, 189, 189);
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 

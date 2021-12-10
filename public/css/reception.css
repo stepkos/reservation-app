@@ -98,7 +98,9 @@
 #visits_holder_history::-webkit-scrollbar-thumb {
     background: rgb(144, 144, 144);
     border-right: 4px #f1f1f1 solid;
+    border-radius: 5px;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -136,6 +138,7 @@
     background: rgb(144, 144, 144);
     border-right: 4px #f1f1f1 solid;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -169,6 +172,7 @@
     background: rgb(144, 144, 144);
     border-right: 4px #f1f1f1 solid;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
