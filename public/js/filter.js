@@ -23,7 +23,6 @@ const filterVisits = () => {
     visitsHolder.empty()
 
     visitDivs.each((index) => {  
-        console.log(elementsToFilter.eq(index))
         if (elementsToFilter.eq(index).text().trim().match(re) !== null)
             visitDivs.eq(index).appendTo("#visits_holder_history")
     })

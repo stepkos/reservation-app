@@ -15,7 +15,7 @@
 
             <input type="hidden" value="{{ auth()->user()->id }}" name="patient_id">
 
-            <select id="form_doctor" name="doctor_id">
+            <select id="form_doctor" name="doctor_id" oninput="viewDoctorHours(this)">
                 @foreach($doctors as $doctor)
                     <option value="{{ $doctor->id }}" 
                         @isset($doctor_id) 
@@ -66,7 +66,7 @@
         
         <div id="appointment_work_hours">
             <span>Godziny pracy</span>
-            <span id="doctor" class="hours">Marian Kowalski</span>
+            <span id="doctor" style="font-weight:bold">Marian Kowalski</span>
             <span class="day">Poniedziałek</span>
             <span class="hours">8:00-16:00</span>
             <span class="day">Wtorek</span>
@@ -80,4 +80,7 @@
         </div>
     </form>
 </div>
+
+
+<script language="javascript" src="{{ asset('js/work.js') }}"></script>
 @endsection

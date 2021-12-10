@@ -93,7 +93,7 @@ class User extends Authenticatable
                     ->where('doctor_id',$doctor_id)
                     ->get();
         
-        return ($workHours != []) ? $workHours : null;
+        return ($workHours != []) ? $workHours[0] : null;
     }
 
     public static function role($user_id) {  // zwraca stringa reprezentującego role ['Patient', 'Doctor', 'Reception']

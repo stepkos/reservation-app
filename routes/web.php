@@ -27,7 +27,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Below uri's for loged users
 Route::group(['middleware' => 'auth'], function() {
+
     
+    Route::post("/doctorWorkHours/{doctor_id}", [App\Http\Controllers\ApiController::class, 'doctorHoursJSON']);
+
+
+
+
     //Patient
     Route::group(['middleware' => 'checkPatient'], function() {
 
