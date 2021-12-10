@@ -20,7 +20,6 @@ class CreateVisitsTable extends Migration
             $table->unsignedBigInteger('visit_type_id');
             $table->dateTime('date', $precision=0);
             $table->text('description');
-            $table->boolean('approved_by_reception');
             $table->timestamps();
         });
 

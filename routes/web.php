@@ -29,12 +29,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => 'auth'], function() {
     
     //Patient
-    Route::group(['middleware' => 'checkPatient'], function(){
+    Route::group(['middleware' => 'checkPatient'], function() {
 
         Route::get('/patient_home', [PatientController::class, 'get_home'])->name('patient_home');
         Route::get('/patient_all_doctors', [PatientController::class, 'get_all_doctors'])->name('patient_all_doctors');
         Route::get('/patient_add_appointment', [PatientController::class, 'get_add_appointment'])->name('patient_add_appointment');
-        // TODO POST dodawanie wizyty
+        Route::post('/patient_add_appointment', [PatientController::class, 'post_add_appointment']);
 
     });
     
@@ -53,7 +53,7 @@ Route::group(['middleware' => 'auth'], function() {
     });
     
     // Doctor
-    Route::group(['middleware' => 'checkDoctor'], function(){
+    Route::group(['middleware' => 'checkDoctor'], function() {
 
         Route::get('/doctor_home', [DoctorController::class, 'get_home'])->name('doctor_home');
         Route::get('/doctor_home_archive', [DoctorController::class, 'get_home_archive'])->name('doctor_home_archive');

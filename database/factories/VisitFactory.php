@@ -27,7 +27,6 @@ class VisitFactory extends Factory
             'visit_type_id' => rand(1, $visit_type_count),
             'date' => $this->faker->dateTimeBetween('-1 year', '+1 year'),
             'description' => $this->faker->paragraph(),
-            'approved_by_reception' => rand(0, 1) == 1
         ];
     }
 }

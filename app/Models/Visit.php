@@ -11,6 +11,14 @@ class Visit extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'patient_id',
+        'doctor_id',
+        'visit_type_id',
+        'date',
+        'description',
+    ];
+
     public static function allFullData() {
         return DB::table('full_visit_view')
                     ->get();
