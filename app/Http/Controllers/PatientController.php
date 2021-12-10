@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AddAppointmentRequest;
 use App\Models\User;
 use App\Models\Visit;
 use App\Models\VisitType;
@@ -28,18 +29,19 @@ class PatientController extends Controller
         return view("patient.add_appointment", compact('doctors', 'visitTypes', 'error_message'));
     }
 
-    public function post_add_appointment(Request $request) {
+    public function post_add_appointment(AddAppointmentRequest $request) {
 
         // TODO SPRAWDZ CZY WARTOSCI NIE SA PUSTE
+        // moze zrob custom request do walidacji przy okazji czy zasob nalezy do uzytkownika
 
-        $visit_date = $request->get('visit_date');
-        $visit_time = $request->get('visit_time');
+        $visit_date = $request->validated()['visit_date'];
+        $visit_time = $request->validated()['visit_time'];
         $date = $visit_date.' '.$visit_time;
-
-        $doctor_id = $request->get('doctor_id');
-        $patient_id = $request->get('patient_id');
-        $visit_type_id = $request->get('visit_type_id');
-        $description = $request->get('description');
+        
+        $doctor_id = $request->validated()['doctor_id'];
+        $patient_id = $request->validated()['patient_id'];
+        $visit_type_id = $request->validated()['visit_type_id'];
+        $description = $request->validated()['description'];
 
         $checkDateValue = Visit::checkVisitBook($date, $doctor_id);
 
@@ -55,7 +57,7 @@ class PatientController extends Controller
                 'description'
             ));
     
-            return redirect()->route('patient_add_appointment');
+            return redirect()->route('patient_home');
         }
 
         $doctors = User::allDoctors();
