@@ -33,9 +33,11 @@
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
+    text-shadow:0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 #lewa-dol {
+    text-shadow:0 0 5px rgba(0, 0, 0, 0.1);
     margin-top: 2em;
     align-self: flex-start;
     display: flex;
@@ -45,7 +47,7 @@
     align-items: center;
     margin-bottom: 3em;
     justify-content: space-evenly;
-    margin-left: 8%;
+    margin-left: 20vh;
 }
 
 #formularz {
@@ -73,13 +75,13 @@
 
 #rejestracja {
     background-color: white;
-    font-weight: 300;
     color: #008DFF;
     border-radius: 9px;
-    height: 4em;
-    width: 20em;
-    font-size: 0.95em;
+    height: 6vh;
+    width: 30vh;
+    font-size: 1.5em;
     cursor: pointer;
+    justify-self: center;
 }
 
 #log {
@@ -97,12 +99,27 @@ img {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    outline: none;
 }
 
 .divy_form {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    
+}
+.divy_form input{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+input[type="submit"]{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input[type="button"]{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .register {
@@ -127,15 +144,14 @@ img {
 
 #zarejestruj {
     background-color: #008DFF;
-    font-weight: 300;
+    align-self: center;
     color: white;
     border-radius: 9px;
-    height: 4em;
-    width: 20em;
-    font-size: 0.95em;
+    height: 6vh;
+    width: 25vh;
+    font-size: 1.5em;
     min-height: 0.5em;
     min-width: 0.5em;
-    margin-left: 25%;
     cursor: pointer;
 }
 
