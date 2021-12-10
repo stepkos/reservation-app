@@ -14,6 +14,7 @@
     font-family: 'Roboto', sans-serif;
     min-width: 500px;
     min-height: 500px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 #container2 {
@@ -40,13 +41,12 @@
     flex-direction: column;
     margin-top: 2em;
     min-height: 2.5em;
-    align-content: center;
+    align-content: flex-end;
     align-items: center;
     margin-bottom: 3em;
     justify-content: space-evenly;
-    margin-left: 7.5%;
+    margin-left: 20vh;
 }
-
 #formularz {
     align-self: flex-start;
     background-color: white;
@@ -87,9 +87,9 @@
     font-weight: 300;
     color: white;
     border-radius: 9px;
-    height: 4em;
-    width: 20em;
-    font-size: 0.95em;
+    height: 6vh;
+    width: 32vh;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
@@ -116,9 +116,9 @@
     font-weight: 300;
     color: #008DFF;
     border-radius: 9px;
-    height: 4em;
-    width: 20em;
-    font-size: 0.95em;
+    height: 6vh;
+    width: 32vh;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
@@ -131,6 +131,22 @@
 img {
     max-width: 450px;
     max-height: 450px;
+}
+input[type="password"]{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input[type="email"]{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input[type="button"]{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input[type="submit"]{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 450px) {
