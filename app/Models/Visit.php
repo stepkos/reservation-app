@@ -45,7 +45,7 @@ class Visit extends Model
         if($realDateEntered < time())
             return -1;
 
-        $doctorWorkHours = array_values( (array)User::doctorWorkHours($doctor_id)[0] );
+        $doctorWorkHours = array_values( (array)User::doctorWorkHours($doctor_id) );
         $indexWeekDay =  intval( date('w', strtotime($datetime_entered)) );
 
 
