@@ -16,8 +16,9 @@
             </div>
 
             <div id="timer_holder">
+                <p style="display:none" id="visit_end">{{$visit[0]->standard_duration}}</p>
                 <p id="remains-p">Pozostało</p>
-                <p id="remains-time">50 minut</p>
+                <p id="remains-time"></p>
             </div>
         </div>
 
@@ -27,7 +28,7 @@
 
         <form id="doctor_visit_form">
         <textarea id="visit-description" cols="100" rows="5">
-{{ $visit[0]->description }}
+            {{ $visit[0]->description }}
         </textarea> 
 
         <input type="submit" />
@@ -66,7 +67,7 @@
 </section>
 
 
-
+<script language="javascript" src="{{ asset('js/visit.js') }}"></script>
 
 
 @endsection
