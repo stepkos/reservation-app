@@ -148,22 +148,12 @@ img {
     max-width: 450px;
     max-height: 450px;
 }
-input[type="password"]{
+input {
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-input[type="email"]{
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-input[type="button"]{
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-input[type="submit"]{
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
+
+/* Te cale media to kod do usuniecia */
 
 @media screen and (max-width: 450px) {
     #container2 {
@@ -316,8 +306,6 @@ input[type="submit"]{
     }
 }
 
-
-/*Jebać Apple zróbcie kurwa urządzenia w normalnych rozmiarach*/
 
 @media screen and (max-width: 385px) {
     #container2 {
