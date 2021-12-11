@@ -1,6 +1,8 @@
 
 const viewDoctorHours = (selectElement = null) =>{
     
+    $('#error').text("")
+
     let doctorId = $("#form_doctor").val();
     let doctorName = (selectElement != null) ? selectElement.options[selectElement.selectedIndex].text : $("#form_doctor option:first").text();
 
@@ -41,5 +43,5 @@ const viewDoctorHours = (selectElement = null) =>{
 
 
 // zaciągnięcie danych na początku wejścia na stronie na podstawie pierwszej opcji w select od doktorów
-$("#doctor").text( $("#form_doctor option:first").text() );
+$("#doctor").text( $("#form_doctor option:selected").text() );
 viewDoctorHours()
