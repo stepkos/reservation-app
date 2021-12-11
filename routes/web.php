@@ -60,6 +60,7 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('/doctor_visit', [DoctorController::class, 'get_visit'])->name('doctor_visit');
         // TODO POST Edycja wizyty (uzyj tego samego formularza)
 
+        // okoduj brak wizyty
     });
 
 });
