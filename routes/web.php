@@ -40,8 +40,8 @@ Route::group(['middleware' => 'auth'], function() {
 
         Route::post('/del_visit', [ReceptionController::class, 'del_visit'])->name('del_visit');
 
-        Route::get('/edit_visit', [ReceptionController::class, 'get_edit_visit'])->name('edit_visit');
-        Route::post('/edit_visit', [ReceptionController::class, 'post_edit_visit']);
+        Route::get('/edit_visit', [ReceptionController::class, 'get_edit_visit'])->name('get_edit_visit');
+        Route::post('/edit_visit', [ReceptionController::class, 'post_edit_visit'])->name('post_edit_visit');
         
         Route::get('/reception_accounts', [ReceptionController::class, 'get_accounts'])->name('reception_accounts');
         Route::post('/reception_accounts', [ReceptionController::class, 'post_accounts']);

@@ -54,20 +54,20 @@ class ReceptionController extends Controller
             
     }
 
-    public function post_edit_visit(EditAppointmentRequest $request) { 
+    public function post_edit_visit(Request $request) { 
         // Dziala pod warunkiem ze daty i godziny nie zmianiasz
-
-        $visit_id = $request->validated()['visit_id'];
+        
+        $visit_id = $request->get('visit_id');
         $specVisit = Visit::find($visit_id);
         
-        $visit_date = $request->validated()['visit_date'];
-        $visit_time = $request->validated()['visit_time'];
+        $visit_date = $request->get('visit_date');
+        $visit_time = $request->get('visit_time');
         $date = $visit_date.' '.$visit_time;
         
-        $doctor_id = $request->validated()['doctor_id'];
-        $patient_id = $request->validated()['patient_id'];
-        $visit_type_id = $request->validated()['visit_type_id'];
-        $description = $request->validated()['description'];
+        $doctor_id = $request->get('doctor_id');
+        $patient_id = $request->get('patient_id');
+        $visit_type_id = $request->get('visit_type_id');
+        $description = $request->get('description');
 
         if ($specVisit->date == $date) {
             $specVisit->update(compact(
@@ -121,8 +121,6 @@ class ReceptionController extends Controller
                 'visit_id'
             ));
     }
-
-    
 
     public function get_accounts() {
 

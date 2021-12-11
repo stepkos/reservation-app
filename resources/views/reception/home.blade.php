@@ -27,7 +27,7 @@
                     </div>
                     <div class="right_buttons">
 
-                        <form method="GET" action="{{ route('edit_visit') }}">
+                        <form method="GET" action="{{ route('get_edit_visit') }}">
                             @csrf
 
                             <input type="hidden" name="visit_id" value="{{ $visit->visit_id }}">

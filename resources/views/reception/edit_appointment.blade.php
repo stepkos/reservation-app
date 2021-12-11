@@ -12,7 +12,7 @@
     <div id="appointment_banner">
         Umawianie wizyty
     </div>
-    <form id="appointment_form" method="POST">
+    <form id="appointment_form" method="POST" action="{{ route('post_edit_visit') }}">
         <div id="form_down">
 
             @csrf
