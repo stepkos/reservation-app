@@ -8,6 +8,7 @@
     <!-- css imports -->
     <link href="{{ asset('css/panel1.css') }}" rel="stylesheet">
     <link href="{{ asset('css/reception.css') }}" rel="stylesheet">
+    @yield('extra_css')
     <!-------------------------------------------------------------->
 
     <!-- font imports -->

@@ -31,9 +31,6 @@ class PatientController extends Controller
 
     public function post_add_appointment(AddAppointmentRequest $request) {
 
-        // TODO SPRAWDZ CZY WARTOSCI NIE SA PUSTE
-        // moze zrob custom request do walidacji przy okazji czy zasob nalezy do uzytkownika
-
         $visit_date = $request->validated()['visit_date'];
         $visit_time = $request->validated()['visit_time'];
         $date = $visit_date.' '.$visit_time;
