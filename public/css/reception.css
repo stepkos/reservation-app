@@ -2,13 +2,15 @@
     width: 90%;
     margin-left: 5%;
     height: 250px;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .visit_card_reception {
@@ -16,10 +18,12 @@
     margin-left: 5%;
     height: 250px;
     margin-left: 15%;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
@@ -28,9 +32,11 @@
 .visit_card_accounts {
     width: 72.5%;
     height: 250px;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -47,6 +53,9 @@
     background-color: white;
     display: flex;
     align-items: center;
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
     border-radius: 5%;
 }
 
@@ -59,8 +68,11 @@
 #visits_holder_acc {
     width: 90%;
     margin-left: 5%;
-    height: 80%;
+    height: 90%;
     margin-top: 3%;
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
     float: left;
     background-color: white;
     display: flex;
@@ -70,7 +82,7 @@
 
 #accounts {
     width: 100%;
-    height: 90%;
+    height: 100%;
     overflow-y: scroll;
 }
 
@@ -81,6 +93,7 @@
     overflow-y: scroll;
     background-color: white;
 }
+
 
 
 /* Track */
@@ -98,7 +111,9 @@
 #visits_holder_history::-webkit-scrollbar-thumb {
     background: rgb(144, 144, 144);
     border-right: 4px #f1f1f1 solid;
+    border-radius: 5px;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -136,6 +151,7 @@
     background: rgb(144, 144, 144);
     border-right: 4px #f1f1f1 solid;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -169,6 +185,7 @@
     background: rgb(144, 144, 144);
     border-right: 4px #f1f1f1 solid;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -196,6 +213,9 @@
     align-items: center;
     font-size: 3vh;
 }
+textarea{
+    resize: none;
+}
 
 .visit_left {
     display: flex;
@@ -204,7 +224,11 @@
     align-items: center;
     flex-direction: column;
     background-color: #76dfed;
+    border-radius: 10px 0px 0px 10px;
     color: white;
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
     width: 25%;
 }
 
@@ -218,6 +242,10 @@
     color: white;
     font-weight: bold;
     font-size: 3vh;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
     width: 25%;
 }
 
@@ -251,6 +279,7 @@
     margin-left: auto;
     margin-right: 5vh;
     display: flex;
+    
     flex-direction: column;
     justify-content: flex-start;
     background-color: white;
@@ -276,6 +305,7 @@
     font-size: 3vh;
 }
 
+
 .visit_pacient_name {
     width: 100%;
     height: 10vh;
@@ -293,10 +323,10 @@
     background-color: white;
     color: #76dfed;
 }
-
-.approve:hover {
-    color: lightgreen;
+.right_buttons button:hover {
+    cursor: pointer;
 }
+
 
 .description {
     margin-bottom: -1.5vh;
@@ -327,6 +357,7 @@
 
 #acc_button_holder button {
     background-color: #76dfed;
+    transition: .2s background-color ease-in-out;
     border-style: none;
     border-radius: 2.5vh;
     width: 16vh;
@@ -346,6 +377,7 @@
     border-color: #76dfed;
     border-style: solid;
     color: #76dfed;
+    cursor: pointer;
 }
 
 #acc_button_holder {
@@ -382,8 +414,8 @@
 }
 
 .right_desc {
-    margin-left: auto;
-    margin-right: 5vh;
+    margin-left:auto;
+    width: 65%;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -397,8 +429,9 @@
     font-size: 2vh;
     border-style: none;
     height: 17vh;
-    width: 50vh;
+    width: 90%;
     margin-bottom: -5vh;
+    background-color: white;
     color: black;
     font-family: Roboto;
 }

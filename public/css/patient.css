@@ -14,8 +14,26 @@
     flex-direction: column;
     align-items: center;
 }
-
-
+#doctor{
+    width:max-content;
+}
+textarea{
+    resize: none;
+    border: none;
+    background-color:#dddddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+input{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+input::-webkit-input-placeholder {
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
 /* width */
 
 #doctors_list_holder::-webkit-scrollbar {
@@ -39,6 +57,7 @@
     background: rgb(144, 144, 144);
     border-right: 4px white solid;
     background-clip: padding-box;
+    border-radius: 5px;
 }
 
 
@@ -75,6 +94,7 @@
 #appointment_form_holder {
     width: 100%;
     height: 90vh;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,6 +111,7 @@
     width: 70%;
     height: 65vh;
     background-color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23);
     border-radius: 15px;
     display: flex;
@@ -100,13 +121,17 @@
     align-items: flex-start;
     gap: 3vh;
 }
+#appointment_form select:focus{
+    outline: none;
+    background-color: #b9b9b9;
+}
 
 #appointment_work_hours {
     align-self: flex-start;
     display: flex;
+    width: 25%;
     flex-direction: column;
     align-items: center;
-    margin-left: -25vh;
     margin-top: 5vh;
     gap: 2vh;
     font-size: 2.5vh;
@@ -127,10 +152,10 @@
     width: 75%;
     height: 75%;
     display: flex;
+    margin-right: -25vh;
     flex-direction: column;
     align-items: flex-start;
     gap: 5vh;
-    margin-left: -15vh;
 }
 
 #error {
@@ -139,16 +164,27 @@
 }
 
 #appointment_form select {
-    width: 50%;
+    background-color: #DDDDDD;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 50.1%;
     font-size: 3vh;
+    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    transition: .2s background-color ease-in-out;
     padding: 0.5%;
-    background-color: white;
-    color: #259dff;
-    border-color: #259dff;
+    color: black;
+    border-color: #DDDDDD;
+}
+option:not(:checked) {
+    background-color: #DDDDDD;
 }
 
 #appointment_form textarea {
-    width: 50%;
+    background-color: #DDDDDD;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 49.5%;
+    transition: .2s background-color ease-in-out;
     font-size: 2vh;
     min-height: 10%;
     min-width: 30%;
@@ -162,22 +198,45 @@
     width: 50%;
     font-size: 2vh;
     background-color: #259dff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     color: white;
     padding: 1.5%;
     border: none;
     border-radius: 10px;
+    transition: .2s background-color ease-in-out;
+}
+#appointment_form input[type=submit]:hover {
+    background-color: #0079dd;
 }
 
 input[type=date] {
-    width: 50%;
+    width: 49.9%;
     min-height: 3vh;
     font-size: 2vh;
     margin-top: -1vh;
+    background-color: #DDDDDD;
+    transition: .2s background-color ease-in-out;
     margin-bottom: -2vh;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 input[type=time] {
     min-height: 3vh;
-    width: 50%;
+    width: 49.9%;
+    background-color: #DDDDDD;
+    transition: .2s background-color ease-in-out;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     font-size: 2vh;
+}
+input[type=time]:focus {
+    background-color: #b9b9b9;
+    outline: none;
+}
+input[type=date]:focus {
+    background-color: #b9b9b9;
+    outline: none;
+}
+#appointment_form textarea:focus{
+    background-color: #b9b9b9;
+    outline: none;
 }

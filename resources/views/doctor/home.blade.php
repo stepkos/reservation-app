@@ -32,6 +32,11 @@
                     <p>{{ $visit->standard_duration }}</p>
                 </section>
             </div>
+            <div class="short_note">
+                        <div class="short_note_text">
+                            {{ $visit->description }}
+                        </div>
+                    </div>
         </article>
         @endforeach
     </div>
