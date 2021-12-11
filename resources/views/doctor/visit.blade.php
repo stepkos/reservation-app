@@ -16,7 +16,8 @@
             </div>
 
             <div id="timer_holder">
-                <p style="display:none" id="visit_end">{{$visit[0]->standard_duration}}</p>
+                <p style="display:none" id="visit_end">{{$visit[0]->estimated_end}}</p>
+                <p style="display:none" id="visit_duration">{{$visit[0]->standard_duration}}</p>
                 <p id="remains-p">Pozostało</p>
                 <p id="remains-time"></p>
             </div>
