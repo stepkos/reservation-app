@@ -28,7 +28,9 @@ class DoctorController extends Controller
             return view("doctor.visit", compact(['visit', 'patient_archive_visits']));
         }
 
-        return view("doctor.no-visit");
+
+        $nextVisit = User::nextVisit(auth()->user()->id);
+        return view("doctor.no-visit", compact('nextVisit'));
     }
 
 }
