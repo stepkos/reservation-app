@@ -1,64 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Reservation app
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/compatibility-ie-6.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-## About Laravel
+<br/>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**<p align="center">Application built with Laravel for administrating dental offices</p>**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+[image logo here]
 
-## Learning Laravel
+**<p>Reservation app was developed for school project. It handles full flow of patients, doctors and reception in dental office</p>**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Table of Contents
+* **[Authors](#Authors)**
+* **[Installation](#Installation)**
+* **[Description](#Description)**
+* **[Functionalities](#Functionalities)**
+* **[Database](#Database)**
+* **[Documentation](#Documentation)**
+* **[Licence](#Licence)**
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Authors
 
-### Premium Partners
+- Jakub Stępkowski [stepkos](https://github.com/stepkos) : Team Leader, Full-Stack Developer
+- Jan Napieralski [R3VANEK](https://github.com/R3VANEK) : Back-End Developer, Database Engineer
+- Mateusz Sztankiewicz [DΣUS](https://github.com/GodsCrisis) : Front-End Developer
+- Kamil Paczkowski [Avngarde](https://github.com/Avngarde) : Front-End Developer
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
 
-## Contributing
+## Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Before you start
+ - Install [Composer](https://getcomposer.org/)
+ - Install [Mysql](https://www.apachefriends.org/pl/index.html)
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Steps
+- Clone repository to your computer
+- Go to xampp phpmyadmin site and hit command ```create database reservationapp```
+- Go to project directory and run in terminal ```composer install```
+- Run command ```php artisan key:generate```
+- Execute ```php artisan migrate:fresh --seed```
+- In project locate ```env.example``` clone it, fill with your environment specs and save as ```.env```
+- For local server to run app enter ```php artisan serve```
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Description
+
+This app was built within 5 months as an term project for school. It is service handling 3 types of users and their actions :
+- ```patient``` : Views all doctors in database, views his visits and can book new one
+- ```doctor``` : Can view his visits and has special subsite where he can view all details about patient with whom he has right now visit
+- ```reception``` : Views all visits in database, can modify users, cancel visits and change dates of incoming visits
+
+
+## Functionalities
+lorem ipsum
+
+
+## Database
+
+[db schema png here]()
+
+## Documentation
+full documentation for this project in polish you can find [here](https://www.lipsum.com/)
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+All rights reserved
+
+
+
