@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css imports -->
-    <link href="{{ asset('css/panel1.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/panel.css') }}" rel="stylesheet">
     <link href="{{ asset('css/reception.css') }}" rel="stylesheet">
     @yield('extra_css')
     <!-------------------------------------------------------------->
