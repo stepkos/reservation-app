@@ -93,7 +93,7 @@ This app was built within 5 months as an term project for school. It is service 
 
 **Features**
 - User can see here his/hers upcoming visits in dental office in form of compact cards with necessary data
-- On the right there is compact calendar. On it there are marked visits
+- On the right there is compact calendar. On it there are marked upcoming visits
 - Log out button
 
 <br/>
@@ -117,10 +117,48 @@ This app was built within 5 months as an term project for school. It is service 
 - Select input with real ```doctor``` data
 - Asynchronous viewing selected ```doctor``` work hours 
 - Create short note about your health status in textarea input
+- Log out button
 - Validation of given visit date
     - Checking if entered date is in future
     - Checking if entered hour matches ```doctor``` work hours in correct day week
     - Checking if selected ```doctor``` doesn't have visit during entered date and hour
+
+<br/>
+<br/>
+
+### Doctor main panel
+![Doctor main panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/doctor_main.png)
+
+**Features**
+- User can see here his/hers upcoming visits in dental office in form of compact cards with necessary data
+- On the right there is compact calendar. On it there are marked upcoming visits
+- Log out button
+
+<br/>
+<br/>
+
+### Doctor archive panel
+![Doctor archive panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/doctor_archive.png)
+
+**Features**
+- User can see here his/hers archive visits with ```patient``` users in form of compact cards
+- On the right there is compact calendar. On it there are marked upcoming visits
+- Log out button
+
+<br/>
+<br/>
+
+### Doctor visit panel
+![Doctor visit panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/doctor_visit.png)
+
+**Features**
+- This panel is accesible only if ```doctor``` have right now visit with ```patient```
+    - If not it displays information about next upcoming visit
+- ```doctor``` user can see all information about current visit and history of previous ```patient``` visits in dental office
+- ```doctor``` user can add his note to visit
+- Asynchronous timer displaying time left till visit end
+- Log out button
+
 
 ## Database
 
