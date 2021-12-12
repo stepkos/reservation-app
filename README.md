@@ -1,17 +1,17 @@
 ## Reservation app
 
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/compatibility-ie-6.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
 
 <br/>
 
 
 **<p align="center">Application built with Laravel for administrating dental offices</p>**
 
-[image logo here]
+![Application logo](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/login.png)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/compatibility-ie-6.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-**<p>Reservation app was developed for school project. It handles full flow of patients, doctors and reception in dental office</p>**
 
 
 ## Table of Contents
@@ -58,15 +58,46 @@ This app was built within 5 months as an term project for school. It is service 
 
 
 ## Functionalities
-lorem ipsum
 
+### Login Panel
+![Application logo](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/login.png)
+
+
+**Features**
+- Working login functionalities
+- Fully secure CSRF token authentication
+- Protection from SQL Injection attacks
+- Redirecting user to appriopriate panel based on user role
+
+<br/>
+<br/>
+
+
+### Registration Panel
+![Application logo](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/registration.png)
+
+**Features**
+- Working registration functionalities
+- Fully secure CSRF token authentication
+- Protection from SQL Injection attacks
+- Checking input formats
+- Redirecting user to panel 
+- New user's role is automatically set to ```patient``` reception stuff can later change that
 
 ## Database
 
-[db schema png here]()
+Thanks to Laravel features, database schema is stored in multiple php files in ```database/migrations``` folder
+- Be sure your XAMPP is running mysql port and you have empty database called ```reservationapp```
+- You can easily import it via command ```php artisan migrate:fresh``` 
+- To fill database with random data please use ```php artisan db:seed```
+<br/>
+
+Below you can see graphical schema for tables
+
+![Database schema](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/schema.png)
 
 ## Documentation
-full documentation for this project in polish you can find [here](https://www.lipsum.com/)
+full documentation for this project in polish you can find [here](https://github.com/stepkos/ReservationApp/blob/main/doc/ReservationApp.pdf)
 
 ## License
 
