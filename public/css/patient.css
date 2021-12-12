@@ -11,8 +11,8 @@
     height: 85vh;
     overflow-y: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 #doctor{
     width:max-content;
@@ -68,22 +68,34 @@ input::-webkit-input-placeholder {
 }
 
 .doctor_holder {
-    font-size: 3vh;
-    font-weight: bold;
-    margin-top: 2%;
+    font-size: 2.5vh;
     display: flex;
-    height: 12vh;
+    margin-right: 1.5%;
+    margin-top: 2%;
+    padding: 0.5%;
+    flex: 1 1 30%;
+    height: 17vh;
     align-items: center;
     width: 90%;
     background-color: white;
     border-radius: 15px;
-    justify-content: space-around;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctor_info {
+    margin-left: 5%;
+}
+
+.doctor_name {
+    font-size: 3vh;
 }
 
 .doctor_profile_picture {
     height: 8vh;
-    width: 10%;
+    width: 15%;
     border-radius: 100%;
     background-color: red;
     background-position: center;
