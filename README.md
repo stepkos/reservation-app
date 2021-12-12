@@ -60,7 +60,7 @@ This app was built within 5 months as an term project for school. It is service 
 ## Functionalities
 
 ### Login Panel
-![Application logo](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/login.png)
+![Login Panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/login.png)
 
 
 **Features**
@@ -74,7 +74,7 @@ This app was built within 5 months as an term project for school. It is service 
 
 
 ### Registration Panel
-![Application logo](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/registration.png)
+![Registration Panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/registration.png)
 
 **Features**
 - Working registration functionalities
@@ -83,6 +83,44 @@ This app was built within 5 months as an term project for school. It is service 
 - Checking input formats
 - Redirecting user to panel 
 - New user's role is automatically set to ```patient``` reception stuff can later change that
+- Hashing and salting user password in database
+
+<br/>
+<br/>
+
+### Patient main panel
+![Patient main panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/patient_main.png)
+
+**Features**
+- User can see here his/hers upcoming visits in dental office in form of compact cards with necessary data
+- On the right there is compact calendar. On it there are marked visits
+- Log out button
+
+<br/>
+<br/>
+
+### Patient all doctor panel
+![Patient all doctor panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/patient_doctors.png)
+
+**Features**
+- User can see information about all ```doctor``` users in database in form of compact cards
+- Log out button
+
+<br/>
+<br/>
+
+### Patient create visit panel
+![Patient create visit panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/patient_visit.png)
+
+**Features**
+- User can book new visit with ```doctor```
+- Select input with real ```doctor``` data
+- Asynchronous viewing selected ```doctor``` work hours 
+- Create short note about your health status in textarea input
+- Validation of given visit date
+    - Checking if entered date is in future
+    - Checking if entered hour matches ```doctor``` work hours in correct day week
+    - Checking if selected ```doctor``` doesn't have visit during entered date and hour
 
 ## Database
 
