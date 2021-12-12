@@ -39,9 +39,7 @@
                 </div>
                 <div class="right_desc">
                     <span class="description_visit">opis zabiegu</span>
-                    <textarea name="opis" id="opis" cols="50" rows="9" disabled>
-                        {{ $visit->description }}
-                    </textarea>
+                    <textarea name="opis" id="opis" cols="50" rows="9" disabled>{{$visit->description}}</textarea>
                     </div>
                 </div>
         </article>

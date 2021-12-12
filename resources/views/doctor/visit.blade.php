@@ -27,12 +27,14 @@
             {{ $visit[0]->type }}
         </div>
 
-        <form id="doctor_visit_form">
-        <textarea id="visit-description" cols="100" rows="5">
-            {{ $visit[0]->description }}
-        </textarea> 
+        <form id="doctor_visit_form" method="POST" action="{{ route('post_doctor_visit') }}">
+            @csrf
 
-        <input type="submit" />
+            <input type="hidden" value="{{$visit[0]->visit_id}}" name="visit_id">
+
+            <textarea id="visit-description" cols="100" rows="5" name="desc">{{$visit[0]->description}}</textarea> 
+
+            <input type="submit" />
 
         </form>
 
