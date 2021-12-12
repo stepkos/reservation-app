@@ -7,7 +7,6 @@ use App\Http\Controllers\ReceptionController;
 use App\Http\Controllers\DoctorController;
 
 
-
 Route::get('/', function () {
     return redirect()->route('login');
 });
