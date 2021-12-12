@@ -23,6 +23,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        switch (auth()->user()->role_id) {
+            case 1:
+                return redirect()->route('patient_home');
+            case 2:
+                return redirect()->route('doctor_home');
+            case 3:
+                return redirect()->route('reception_home');
+        }
+
+        // return view('home');
     }
 }

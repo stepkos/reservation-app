@@ -9,7 +9,7 @@ use App\Http\Controllers\DoctorController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
 Auth::routes();
