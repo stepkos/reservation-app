@@ -159,6 +159,45 @@ This app was built within 5 months as an term project for school. It is service 
 - Asynchronous timer displaying time left till visit end
 - Log out button
 
+<br/>
+<br/>
+
+### Reception main panel
+![Reception main panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/reception_main.png)
+
+
+**Features**
+- ```reception``` users see here upcoming visits
+- Upcoming visits can be deleted or ```reception``` users can change date of visit
+- Log out button
+
+<br/>
+<br/>
+
+### Reception accounts panel
+
+![Reception accounts panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/reception_accounts.png)
+
+**Features**
+- ```reception``` users see here all users in database
+- ```reception``` users can change user roles
+
+<br/>
+<br/>
+
+### Reception archive panel
+
+![Reception archive panel](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/reception_archive.png)
+
+**Features**
+- ```reception``` users see here all visits (previous and upcoming) in database
+- Asynchronous filtering visits by :
+    - date
+    - ```doctor``` name
+    - ```patient``` name
+    - visit type
+
+
 
 ## Database
 
