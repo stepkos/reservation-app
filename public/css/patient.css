@@ -112,7 +112,7 @@ input::-webkit-input-placeholder {
     height: 65vh;
     background-color: white;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     display: flex;
     padding: 1%;
