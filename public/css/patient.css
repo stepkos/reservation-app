@@ -170,7 +170,7 @@ input::-webkit-input-placeholder {
     gap: 5vh;
 }
 
-#error {
+.error {
     color: red;
     margin-top: -4vh;
 }
