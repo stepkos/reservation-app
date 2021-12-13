@@ -227,6 +227,7 @@ option:not(:checked) {
     border: none;
     border-radius: 10px;
     transition: .2s background-color ease-in-out;
+    cursor: pointer;
 }
 #appointment_form input[type=submit]:hover {
     background-color: #0079dd;

@@ -56,7 +56,7 @@
 
         @foreach($visits->take(3) as $visit)
             <article class="calendar_event">
-                <span class="calendar_event_name">{{ $visit->patient }}</span>
+                <span class="calendar_event_name">{{ $visit->doctor }}</span>
                 <span class="calendar_event_date">{{ $visit->date }}</span>
             </article>
         @endforeach
