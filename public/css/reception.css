@@ -2,9 +2,9 @@
     width: 90%;
     margin-left: 5%;
     height: 250px;
-    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
     display: flex;
@@ -18,9 +18,9 @@
     margin-left: 5%;
     height: 250px;
     margin-left: 15%;
-    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
     border-radius: 10px;
@@ -33,9 +33,9 @@
     width: 72.5%;
     height: 250px;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
     display: flex;
@@ -53,10 +53,10 @@
     background-color: white;
     display: flex;
     align-items: center;
-    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    border-radius: 5%;
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
 }
 
 #visits {
@@ -70,14 +70,14 @@
     margin-left: 5%;
     height: 90%;
     margin-top: 3%;
-    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     float: left;
     background-color: white;
     display: flex;
     align-items: center;
-    border-radius: 5%;
+    border-radius: 25px;
 }
 
 #accounts {
@@ -226,9 +226,9 @@ textarea{
     background-color: #76dfed;
     border-radius: 10px 0px 0px 10px;
     color: white;
-    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     width: 25%;
 }
 
@@ -243,16 +243,15 @@ textarea{
     font-weight: bold;
     font-size: 3vh;
     border-radius: 10px 0px 0px 10px;
-    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     width: 25%;
 }
 
 .visit_right {
     display: flex;
     flex-direction: row;
-    background-color: white;
     width: 100%;
 }
 
@@ -359,17 +358,17 @@ textarea{
     background-color: #76dfed;
     transition: .2s background-color ease-in-out;
     border-style: none;
-    border-radius: 2.5vh;
+    border-radius: 2vh;
     width: 16vh;
-    height: 7vh;
+    height: 6vh;
     float: right;
     margin-top: 7vh;
     margin-right: 5.5vh;
     font-size: 1.8vh;
     color: white;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 #acc_button_holder button:hover {
@@ -392,9 +391,15 @@ textarea{
     margin-top: 2vh;
     font-size: 3vh;
     color: #76dfed;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    color: #76dfed;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    border-radius: 1vh 1vh 0 0;
+    color: #76dfed;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 #select_history {
@@ -404,13 +409,17 @@ textarea{
     justify-self: left;
     height: 4.5vh;
     width: 25vh;
-    margin-bottom: -4vh;
+    margin-bottom: -2vh;
     font-size: 2vh;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    border-radius: 1vh 1vh 0 0;
     margin-left: 1.5vh;
     color: #76dfed;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .right_desc {
@@ -454,10 +463,13 @@ textarea{
     height: 4vh;
     width: 30vh;
     font-size: 2vh;
-    margin-bottom: -4vh;
-    -webkit-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 2px 9px -4px rgba(66, 68, 90, 1);
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: -2vh;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .search input::placeholder {

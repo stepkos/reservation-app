@@ -28,7 +28,15 @@
 
                         <section>
                             <p>Przewidywany czas</p>
-                            <p>{{ $visit->standard_duration }}</p>
+                            <p>{{ $visit->standard_duration }} 
+                            @php
+                                if($visit->standard_duration !== 1)
+                                    echo 'godziny';
+                                else
+                                    echo 'godzina';
+                            @endphp
+
+                            </p>
                         </section>
                     </div>
                     <div class="short_note">

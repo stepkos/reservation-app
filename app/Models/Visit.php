@@ -16,7 +16,7 @@ class Visit extends Model
         'doctor_id',
         'visit_type_id',
         'date',
-        'description',
+        'description'
     ];
 
     public static function allFullData() {

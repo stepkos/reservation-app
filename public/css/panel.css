@@ -1,109 +1,150 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
+    align-self: flex-start;
     width: 100%;
     height: 10vh;
-    font-family: 'Roboto', sans-serif;
     background-color: #DDDDDD;
-    font-size: 3vh;
+    background-color: white;
+    -webkit-box-shadow: 2px 8px 24px -20px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 8px 24px -20px rgba(66, 68, 90, 1);
+    box-shadow: 2px 8px 24px -20px rgba(66, 68, 90, 1);
+    font-size: 1.4vw;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 aside {
-    float: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5vh;
-    width: 15vw;
+    font-size: 2.2vh;
+    width: 14vw;
     height: 90vh;
-    background-color: #747474;
+    background-color: rgb(87, 95, 114);
     display: flex;
-    gap: 6vh;
+    gap: 3vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
-    margin-top: 10vh;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 main {
     float: right;
-    width: 85vw;
+    flex-grow: 1;
     height: 90vh;
+    width: 5vw;
+    background-color: #f4f5f9;
 }
 
-#color_div {
-    background-color: #1ECFE1;
-    width: 15%;
+
+/*
+    Navbar styles
+    -------------------------------------------------------------------
+*/
+
+#logo_box {
+    background: linear-gradient(180deg, #1ECFE1, #259dff);
+    width: 14vw;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#user_data {
+#logo_box img {
+    width: 40%;
+    height: 9vh;
+}
+
+#nav_user {
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    margin-right: 5%;
 }
 
-#user_data img {
-    margin-left: 1%;
+.name {
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#profile_picture_holder {
+    margin-left: 2%;
+    height: 8vh;
     width: 10%;
-    height: 9vh;
     border-radius: 100%;
+    background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
-#header_content {
-    display: flex;
-    width: 80%;
-    height: 10vh;
-    justify-content: space-evenly;
-    align-items: center;
+#logout {
+    background-color: rgb(245, 92, 92);
+    color: white;
+    padding: 10px;
+    margin-left: 10%;
+    cursor: pointer;
+    border-radius: 0.3em;
+    transition: 0.3s ease-in-out;
+    display: block;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
-#header_content a {
-    text-decoration: none;
-    color: black;
+#logout:hover {
+    background-color: red;
 }
 
-#main_content {
-    height: 90vh;
-    width: 100%;
-    display: flex;
-}
 
-#main_panel {
-    width: 65%;
-    float: left;
-}
+/*
+    end of Navbar styles
+    ---------------------------------------------------------
+*/
 
-#left_panel {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5vh;
-    width: 15%;
-    height: 90vh;
-    background-color: #747474;
-    display: flex;
-    flex-direction: column;
-    gap: 6vh;
-    justify-content: center;
-    align-items: center;
-}
+
+/*
+    aside styles
+    ---------------------------------------------------------
+*/
 
 .panel_section {
+    font-weight: bold;
+    margin-top: 10vh;
     color: #1FAEFF;
+    font-size: 2.8vh;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .panel_link {
+    height: auto;
+    cursor: pointer;
     width: 100%;
     display: flex;
     align-items: center;
+    transition: 0.2s ease-in-out all;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.panel_link:hover {
+    background-color: #1FAEFF;
 }
 
 .panel_link img {
     margin-left: 2%;
     margin-right: 2%;
-    width: 20%;
+    width: 15%;
+    margin-left: 5%;
+    border-radius: 50%;
 }
 
 .panel_link a {
@@ -112,218 +153,4 @@ main {
     color: white;
     width: 70%;
     text-decoration: none;
-}
-
-#visits {
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.visit {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2vh;
-    margin-top: 4%;
-    padding: 3%;
-    border-radius: 8px;
-    width: 90%;
-    background-color: #DDDDDD;
-    display: flex;
-    justify-content: space-around;
-}
-
-.visit_doctor {
-    margin-top: 3%;
-}
-
-.see_recommendations a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-}
-
-.see_recommendations a img {
-    width: 25%;
-}
-
-#important_data {
-    width: 35%;
-    float: right;
-}
-
-
-/* calendar css */
-
-.clndr {
-    width: 98%;
-}
-
-.noselect {
-    -webkit-user-select: none;
-    /* Chrome/Safari */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* IE10+ */
-}
-
-.clndr .clndr-controls {
-    position: relative;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    padding: 2em 0;
-    text-align: center;
-    background-color: #1FAEFF;
-    margin: 1.5em 0;
-}
-
-.clndr .clndr-controls .month {
-    text-align: center;
-    color: #fff;
-    font-size: 1.3em;
-}
-
-.clndr .clndr-controls .clndr-control-button .clndr-next-button {
-    position: absolute;
-    right: 7%;
-    top: 45%;
-    width: 8px;
-    height: 15px;
-    text-indent: -4000px;
-    background: url(../images/calender-arw.png) no-repeat -12px 0px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-.clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
-    cursor: default;
-}
-
-.clndr .clndr-controls .clndr-control-button .clndr-previous-button {
-    position: absolute;
-    left: 7%;
-    top: 45%;
-    width: 8px;
-    height: 15px;
-    text-indent: -4000px;
-    background: url(../images/calender-arw.png) no-repeat 1px 0px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-.clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive:hover {
-    cursor: default;
-}
-
-.cal1 .clndr .clndr-table {
-    table-layout: fixed;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.cal1 .clndr .clndr-table .header-days {
-    font-size: 16px;
-    background: none;
-    margin-bottom: 1em;
-}
-
-.cal1 .clndr .clndr-table .header-days .header-day {
-    vertical-align: middle;
-    text-align: center;
-    color: #333;
-    font-weight: 700;
-}
-
-.cal1 .clndr .clndr-table tr {
-    height: 46px;
-}
-
-.cal1 .clndr .clndr-table tr td {
-    vertical-align: top;
-}
-
-.cal1 .clndr .clndr-table tr .day {
-    width: 100%;
-    height: inherit;
-    color: #555;
-    vertical-align: middle;
-}
-
-.cal1 .clndr .clndr-table tr .day.today {
-    background: #A1D36E;
-    color: #FFF;
-}
-
-.dat-c {
-    color: #c5996c;
-}
-
-.cal1 .clndr .clndr-table tr .day.today:hover {
-    color: #FFF;
-}
-
-.cal1 .clndr .clndr-table tr .day.today.event {
-    background: #1FAEFF;
-    color: #FFF;
-    border-radius: 4px;
-}
-
-.day.today.event:hover {
-    color: #FFF;
-}
-
-.cal1 .clndr .clndr-table tr .day .day-contents:hover {
-    color: #1FAEFF;
-}
-
-.cal1 .clndr .clndr-table tr .day .day-contents {
-    box-sizing: border-box;
-    font-size: 0.875em;
-    text-align: center;
-    cursor: pointer;
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: 2px;
-}
-
-.cal1 .clndr .clndr-table tr .empty,
-.cal1 .clndr .clndr-table tr .adjacent-month {
-    width: 100%;
-    height: inherit;
-    color: #999;
-}
-
-@media all and (max-width:1024px) {
-    .cal1 .clndr .clndr-table tr {
-        height: 46px;
-    }
-}
-
-@media all and (max-width:640px) {
-    .cal1 .clndr .clndr-table tr .day .day-contents {
-        font-size: 0.8em;
-    }
-}
-
-@media all and (max-width:320px) {
-    .cal1 .clndr .clndr-table {
-        width: 100%;
-    }
-    .cal1 .clndr .clndr-table tr {
-        height: 35px;
-    }
-    .cal1 .clndr .clndr-table .header-days .header-day {
-        font-size: 0.9em;
-    }
-    .cal1 .clndr .clndr-table tr .day .day-contents {
-        font-size: 0.7em;
-    }
 }

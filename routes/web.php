@@ -7,9 +7,8 @@ use App\Http\Controllers\ReceptionController;
 use App\Http\Controllers\DoctorController;
 
 
-
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
 Auth::routes();
@@ -58,8 +57,8 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('/doctor_home_archive', [DoctorController::class, 'get_home_archive'])->name('doctor_home_archive');
 
         Route::get('/doctor_visit', [DoctorController::class, 'get_visit'])->name('doctor_visit');
-        // TODO POST Edycja wizyty (uzyj tego samego formularza)
-
+        Route::post('/doctor_visit', [DoctorController::class, 'post_visit'])->name('post_doctor_visit');
+        
     });
 
 });

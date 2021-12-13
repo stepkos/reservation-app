@@ -1,7 +1,7 @@
 
 const viewDoctorHours = (selectElement = null) =>{
     
-    $('#error').text("")
+    $('#error_js').text("")
 
     let doctorId = $("#form_doctor").val();
     let doctorName = (selectElement != null) ? selectElement.options[selectElement.selectedIndex].text : $("#form_doctor option:first").text();
@@ -36,7 +36,7 @@ const viewDoctorHours = (selectElement = null) =>{
 
     })
     .catch((error)=>{
-        $('#error').text(error)
+        $('#error_js').text(error)
     })
 }
 
