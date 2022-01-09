@@ -8,15 +8,11 @@
  * @version   1.0.0
  */
 
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Visit;
-
-
-
 
 class DoctorController extends Controller
 {
