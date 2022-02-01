@@ -1,4 +1,12 @@
 <?php
+/**
+ * DoctorController.php
+ * @author    Jakub Stępkowski <stepkos@example.com>>
+ * @copyright 2021 CrazyDevelopers
+ * @license   All rights reserved
+ * @see       https://github.com/stepkos/ReservationApp
+ * @version   1.0.0
+ */
 
 namespace App\Http\Controllers\Auth;
 
