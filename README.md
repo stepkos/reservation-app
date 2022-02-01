@@ -43,9 +43,9 @@
 - Clone repository to your computer
 - Go to xampp phpmyadmin site and hit command ```create database reservationapp```
 - Go to project directory and run in terminal ```composer install```
+- In project locate ```env.example``` clone it, fill with your environment specs and save as ```.env```
 - Run command ```php artisan key:generate```
 - Execute ```php artisan migrate:fresh --seed```
-- In project locate ```env.example``` clone it, fill with your environment specs and save as ```.env```
 - For local server to run app enter ```php artisan serve```
 
 
