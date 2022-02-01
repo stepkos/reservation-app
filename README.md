@@ -212,7 +212,7 @@ Below you can see graphical schema for tables
 ![Database schema](https://github.com/stepkos/ReservationApp/blob/main/doc/readme/schema.png)
 
 ## Documentation
-full documentation for this project in polish you can find [here](https://github.com/stepkos/ReservationApp/blob/main/doc/ReservationApp.pdf)
+Full documentation for this project in polish you can find [here](https://github.com/stepkos/ReservationApp/blob/main/doc/ReservationApp.pdf) (Front-End is little out of date)
 
 ## License
 
