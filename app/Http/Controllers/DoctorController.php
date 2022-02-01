@@ -2,7 +2,7 @@
 /**
  * DoctorController.php
  * @author    Jakub Stępkowski <stepkos@example.com>>
- * @copyright 2021 CrazyDevelopers
+ * @copyright 2022 CrazyDevelopers
  * @license   All rights reserved
  * @see       https://github.com/stepkos/ReservationApp
  * @version   1.0.0

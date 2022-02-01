@@ -1,8 +1,7 @@
 <?php
 /**
- * DoctorController.php
- * @author    Jakub Stępkowski <stepkos@example.com>>
- * @copyright 2021 CrazyDevelopers
+ * RegisterController.php
+ * @copyright 2022 CrazyDevelopers
  * @license   All rights reserved
  * @see       https://github.com/stepkos/ReservationApp
  * @version   1.0.0
@@ -63,7 +62,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
 
-            // Nie dziala ale to cos w tym stylu
+            // Validate phone number with regular expression concept
             // 'phone_number' => 'required|regex:/{0-9}-{0-9}-{0-9}/'
         ]);
     }
