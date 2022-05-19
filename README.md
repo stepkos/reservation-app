@@ -51,7 +51,7 @@
 
 ## Description
 
-This app was built within 5 months as an term project for school. It is service handling 3 types of users and their actions :
+This app was built as an term project for school. It is service handling 3 types of users and their actions :
 - ```patient``` : Views all doctors in database, views his visits and can book new one
 - ```doctor``` : Can view his visits and has special subsite where he can view all details about patient with whom he has right now visit
 - ```reception``` : Views all visits in database, can modify users, cancel visits and change dates of incoming visits
